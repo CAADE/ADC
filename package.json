@@ -2,7 +2,7 @@
   "name": "adc",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "Automotive Data Center Sails application",
   "keywords": [],
   "dependencies": {
     "async": "^2.0.1",
