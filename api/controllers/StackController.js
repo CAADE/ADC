@@ -6,12 +6,11 @@
  */
 
 module.exports = {
-
   /**
    * `StackController.method()`
    */
   method: function (req, res) {
-
+    res.send("method not finishd!");
   }
-}
+};
 

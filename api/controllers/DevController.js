@@ -11,7 +11,8 @@ module.exports = {
    * `DevController.method()`
    */
   method: function (req, res) {
+    res.send("method not finished!");
 
   }
-}
+};
 
