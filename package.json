@@ -9,6 +9,7 @@
     "eslint": "^3.5.0",
     "github-wikito-converter": "^1.2.0",
     "grunt": "^1.0.1",
+    "limedocs-wiki-converter": "^0.1.12",
     "lodash": "^3.10.1",
     "mocha": "^4.0.1",
     "sails": "^1.0.0-40",
@@ -20,7 +21,7 @@
   "scripts": {
     "start": "NODE_ENV=production node app.js",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
-    "build-doc": "cd design && gwtc . -t Automotive_Data_Center",
+    "build-doc": "cd design && lwc . -t Automotive_Data_Center",
     "build": "npm update",
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'",
     "design": "java -jar design/plantuml.jar design/*.puml design/**/*.puml",
