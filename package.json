@@ -7,7 +7,6 @@
   "dependencies": {
     "async": "^2.0.1",
     "eslint": "^3.5.0",
-    "github-wikito-converter": "^1.2.0",
     "grunt": "^1.0.1",
     "lodash": "^3.10.1",
     "mocha": "^4.0.1",
@@ -21,7 +20,7 @@
     "start": "NODE_ENV=production node app.js",
     "clean": "rm -rf node_modules && rm -f package-lock.json",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
-    "build-doc": "cd design && gwtc . -t Automotive_Data_Center",
+    "build-doc": "npm install -g github-wikito-converter &&  cd design && gwtc . -t Automotive_Data_Center",
     "build": "npm update",
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'",
     "design": "java -jar design/plantuml.jar design/*.puml design/**/*.puml",
