@@ -19,6 +19,7 @@
   "scripts": {
     "start": "NODE_ENV=production node app.js",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "build-doc": "cd design && gwtc . -t Automotive_Data_Center --css doc.css",
     "build": "npm update",
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'",
     "design": "java -jar design/plantuml.jar design/*.puml design/**/*.puml",
