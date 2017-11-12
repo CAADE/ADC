@@ -5,7 +5,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm run-script clean'
         sh 'npm run-script build'
       }
     }
