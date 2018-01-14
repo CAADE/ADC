@@ -1,0 +1,36 @@
+
+version: '3'
+
+services:
+  car:
+    image: adc/car
+    ports:
+      - "1338:1338"
+    secrets:
+      - source: car-config-v1
+        target: ./config
+  ingestion:
+    image: adc/ingestion
+    ports:
+      - 2300:2300
+  # mongo:
+  #   image: mongo
+  #   expose:
+  #        - 27017
+  #   ports:
+  #        - "27017:27017"
+  adc:
+    image: adc/web
+    expose:
+      - 1337
+    ports:
+      - "1337:1337"
+  # uservice-name :
+  #  image: adc/uservice-name
+  #  deploy:
+  #          mode: replicated
+  #          replicas: 5
+
+  secrets:
+    car-config-v1:
+      file: ./car-config.js

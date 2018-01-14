@@ -1,0 +1,43 @@
+{
+  "name": "ginteil",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "async": "2.0.1",
+    "grunt": "1.0.1",
+    "lodash": "3.10.1",
+    "micro": "^8.0.1",
+    "node-fetch": "latest",
+    "redis": "^2.7.1",
+    "sails": "^1.0.0-36",
+    "sails-generate-test": "0.0.4",
+    "sails-generate-views": "^0.10.8",
+    "sails-hook-grunt": "^2.0.0",
+    "sails-hook-orm": "^2.0.0-16",
+    "sails-hook-sockets": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "3.5.0",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "custom-test": "node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/**/*.test.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'",
+    "debug": "node debug app.js",
+    "build-uservices": "node ./deploy/build",
+    "build": "cd ../../.. && docker build . --file ./deploy/uservices/web/Dockerfile -t adc/web",
+    "deploy": "docker push localhost:5000/adc/web"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anonymous node/sails user/ginteil.git"
+  },
+  "author": "anonymous node/sails user",
+  "license": ""
+}

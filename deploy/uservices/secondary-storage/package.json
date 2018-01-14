@@ -1,0 +1,11 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "build": "docker push localhost:5000/adc/secondary-storage"
+  },
+  "dependencies": {
+    "micro": "latest",
+    "node-fetch": "latest"
+  }
+}
