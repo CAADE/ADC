@@ -1,3 +1,4 @@
+
 pipeline {
   agent {
     label 'node'
@@ -18,6 +19,7 @@ pipeline {
       steps {
         sh 'npm run-script deploy-test'
         sh 'npm run-script test'
+        sh 'npm run-script teardown-test'
       }
     }
     stage('Production') {
