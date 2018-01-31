@@ -20,7 +20,8 @@ pipeline {
         label 'master'
       }
       steps {
-        sh 'npm run-script deploy-test'
+        sh '
+        sh 'cd deploy && docker stack deploy --compose-file docker-compose-test.yaml adcTest'
         sh 'npm run-script test'
         sh 'npm run-script teardown-test'
       }
