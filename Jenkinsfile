@@ -16,6 +16,9 @@ pipeline {
       }
     }
     stage('Test') {
+      agent {
+        label 'master'
+      }
       steps {
         sh 'npm run-script deploy-test'
         sh 'npm run-script test'
