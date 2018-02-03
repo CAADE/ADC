@@ -17,7 +17,7 @@ pipeline {
     }
     stage('Test') {
       agent {
-        label 'master'
+        label 'docker-master'
       }
       steps {
         sh 'cd deploy && docker stack deploy --compose-file docker-compose-test.yaml adcTest'
