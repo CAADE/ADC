@@ -24,6 +24,11 @@ pipeline {
         sh 'npm run-script test'
         sh 'npm run-script teardown-test'
       }
+      post {
+        always {
+	  junit "./report.xml"
+	}
+      }
     }
     stage('Production') {
       steps {
