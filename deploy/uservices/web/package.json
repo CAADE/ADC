@@ -30,7 +30,7 @@
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'",
     "debug": "node debug app.js",
     "build-uservices": "node ./deploy/build",
-    "build": "cd ../../.. && docker build . --file ./deploy/uservices/web/Dockerfile -t adc/web",
+    "build": "cd ../../.. && docker build . --file ./deploy/uservices/web/Dockerfile -t localhost:5000/adc/web",
     "deploy": "docker push localhost:5000/adc/web"
   },
   "main": "app.js",
