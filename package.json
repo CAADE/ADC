@@ -28,7 +28,7 @@
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'",
     "design": "java -jar design/plantuml.jar design/*.puml design/**/*.puml",
     "deploy-test": "cd deploy && docker stack deploy --compose-file docker-compose-test.yaml adcTest",
-    "custom-tests": "JUNIT_REPORT_PATH=/report.xml node ./node_modules/mocha/bin/mocha --colors --reporter mocha-jenkins-reporter test/bootstrap.test.js test/**/*.test.js",
+    "custom-tests": "JUNIT_REPORT_PATH=./report.xml node ./node_modules/mocha/bin/mocha --reporter mocha-jenkins-reporter test/bootstrap.test.js test/**/*.test.js", 
     "teardown-test": "docker stack rm adcTest",
     "deploy-prod": "echo done",
     "debug": "node debug app.js"
