@@ -2,7 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker push localhost:5000/adc/ingestion"
+    "build": "docker build .",
+    "publish": "docker push localhost:5000/adc/ingestion",
+    "deploy": "docker push localhost:5000/adc/ingestion"
   },
   "dependencies": {
     "micro": "latest",

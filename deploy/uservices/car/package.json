@@ -2,7 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker push localhost:5000/adc/car"
+    "build": "docker build .",
+    "publish": "docker push localhost:5000/adc/car",
+    "deploy": "docker push localhost:5000/adc/car"
   },
   "dependencies": {
     "micro": "latest",

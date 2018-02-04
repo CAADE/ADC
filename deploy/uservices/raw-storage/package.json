@@ -2,7 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker push localhost:5000/adc/raw-storage"
+    "build": "docker build .",
+    "publish": "docker push localhost:5000/adc/raw-storage",
+    "deploy": "docker push localhost:5000/adc/raw-storage"
   },
   "dependencies": {
     "micro": "latest",

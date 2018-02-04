@@ -2,7 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker push localhost:5000/adc/alert-system"
+    "build": "docker build .",
+    "publish": "docker push localhost:5000/adc/alert-system",
+    "deploy": "docker push localhost:5000/adc/alert-system"
   },
   "dependencies": {
     "micro": "latest",
