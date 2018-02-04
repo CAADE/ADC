@@ -27,8 +27,8 @@ pipeline {
       }
       post {
         always {
-	  junit "report.xml"
-	}
+          junit "report.xml"
+        }
       }
     }
     stage('Production') {
