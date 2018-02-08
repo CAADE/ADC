@@ -11,7 +11,7 @@ services:
   adc:
     image: ${CAADE_REGISTRY}/adc-web
     ports:
-      - "80:1337"
+      - "8081:1337"
   ai:
     image: ${CAADE_REGISTRY}/adc-ai
     ports:
