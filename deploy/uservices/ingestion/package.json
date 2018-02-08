@@ -2,7 +2,7 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker build . -t localhots:5000/adc/ingestion",
+    "build": "docker build . -t ${CAADE_REGISTRY}/adc/ingestion",
     "publish": "docker push ${CAADE_REGISTRY}/adc-ingestion",
     "deploy": "docker push ${CAADE_REGISTRY}/adc-ingestion"
   },
