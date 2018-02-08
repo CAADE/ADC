@@ -2,9 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker build . -t localhost:5000/adc/notification-gateway",
-    "publish": "docker push localhost:5000/adc/notification-gateway",
-    "deploy": "docker push localhost:5000/adc/notification-gateway"
+    "build": "docker build . -t ${CAADE_REGISTRY}/adc-notification-gateway",
+    "publish": "docker push ${CAADE_REGISTRY}/adc-notification-gateway",
+    "deploy": "docker push ${CAADE_REGISTRY}/adc-notification-gateway"
   },
   "dependencies": {
     "micro": "latest",

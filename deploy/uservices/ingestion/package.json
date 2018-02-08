@@ -3,8 +3,8 @@
   "scripts": {
     "start": "micro",
     "build": "docker build . -t localhots:5000/adc/ingestion",
-    "publish": "docker push localhost:5000/adc/ingestion",
-    "deploy": "docker push localhost:5000/adc/ingestion"
+    "publish": "docker push ${CAADE_REGISTRY}/adc-ingestion",
+    "deploy": "docker push ${CAADE_REGISTRY}/adc-ingestion"
   },
   "dependencies": {
     "micro": "latest",

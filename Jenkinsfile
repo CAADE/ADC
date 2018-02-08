@@ -1,7 +1,9 @@
-
 pipeline {
   agent {
     label 'node'
+  }
+  environment {
+    CAADE_REGISTRY = 'madajaju'
   }
   stages {
     stage('Build') {

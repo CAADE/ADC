@@ -2,9 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker build . -t localhost:5000/adc/ai",
-    "publish": "docker push localhost:5000/adc/ai",
-    "deploy": "docker push localhost:5000/adc/ai"
+    "build": "docker build . -t ${CAADE_REGISTRY}/adc-ai",
+    "publish": "docker push ${CAADE_REGISTRY}/adc-ai",
+    "deploy": "docker push ${CAADE_REGISTRY}/adc-ai"
   },
   "dependencies": {
     "micro": "latest",

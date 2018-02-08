@@ -2,9 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker build . -t localhost:5000/adc/alert-system",
-    "publish": "docker push localhost:5000/adc/alert-system",
-    "deploy": "docker push localhost:5000/adc/alert-system"
+    "build": "docker build . -t ${CAADE_REGISTRY}/adc-alert-system",
+    "publish": "docker push ${CAADE_REGISTRY}/adc-alert-system",
+    "deploy": "docker push ${CAADE_REGISTRY}/adc-alert-system"
   },
   "dependencies": {
     "micro": "latest",

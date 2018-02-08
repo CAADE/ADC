@@ -9,43 +9,43 @@ services:
   #   ports:
   #        - "27017:27017"
   adc:
-    image: localhost:5000/adc/web
+    image: ${CAADE_REGISTRY}/adc-web
     ports:
       - "80:1337"
   ai:
-    image: localhost:5000/adc/ai
+    image: ${CAADE_REGISTRY}/adc-ai
     ports:
       - "3100:3000"
   alert:
-    image: localhost:5000/adc/alert-system
+    image: ${CAADE_REGISTRY}/adc-alert-system
     ports:
       - "3101:3000"
   annotation:
-    image: localhost:5000/adc/annotation
+    image: ${CAADE_REGISTRY}/adc-annotation
     ports:
       - "3102:3000"
   car:
-    image: localhost:5000/adc/car
+    image: ${CAADE_REGISTRY}/adc-car
     ports:
       - "3103:3000"
   ingestion:
-    image: localhost:5000/adc/ingestion
+    image: ${CAADE_REGISTRY}/adc-ingestion
     ports:
       - "3104:3000"
   notification:
-    image: localhost:5000/adc/notification-gateway
+    image: ${CAADE_REGISTRY}/adc-notification-gateway
     ports:
       - "3105:3000"
   raw:
-    image: localhost:5000/adc/raw-storage
+    image: ${CAADE_REGISTRY}/adc-raw-storage
     ports:
       - "3106:3000"
   secondary:
-    image: localhost:5000/adc/secondary-storage
+    image: ${CAADE_REGISTRY}/adc-secondary-storage
     ports:
       - "3107:3000"
   streaming:
-    image: localhost:5000/adc/streaming
+    image: ${CAADE_REGISTRY}/adc-streaming
     ports:
       - "3108:3000"
   # uservice-name :

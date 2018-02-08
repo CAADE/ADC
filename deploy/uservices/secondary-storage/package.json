@@ -2,9 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker build . -t localhost:5000/adc/secondary-storage",
-    "publish": "docker push localhost:5000/adc/secondary-storage",
-    "deploy": "docker push localhost:5000/adc/secondary-storage"
+    "build": "docker build . -t ${CAADE_REGISTRY}/adc-secondary-storage",
+    "publish": "docker push ${CAADE_REGISTRY}/adc-secondary-storage",
+    "deploy": "docker push ${CAADE_REGISTRY}/adc-secondary-storage"
   },
   "dependencies": {
     "micro": "latest",

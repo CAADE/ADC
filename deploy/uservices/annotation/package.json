@@ -2,9 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker build . -t localhost:5000/adc/annotation",
-    "publish": "docker push localhost:5000/adc/annotation",
-    "deploy": "docker push localhost:5000/adc/annotation"
+    "build": "docker build . -t ${CAADE_REGISTRY}/adc-annotation",
+    "publish": "docker push ${CAADE_REGISTRY}/adc-annotation",
+    "deploy": "docker push ${CAADE_REGISTRY}/adc-annotation"
   },
   "dependencies": {
     "micro": "latest",

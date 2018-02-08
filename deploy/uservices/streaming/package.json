@@ -2,9 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker build . -t localhost:5000/adc/streaming",
-    "publish": "docker push localhost:5000/adc/streaming",
-    "deploy": "docker push localhost:5000/adc/streaming"
+    "build": "docker build . -t ${CAADE_REGISTRY}/adc-streaming",
+    "publish": "docker push ${CAADE_REGISTRY}/adc-streaming",
+    "deploy": "docker push ${CAADE_REGISTRY}/adc-streaming"
   },
   "dependencies": {
     "micro": "latest",
