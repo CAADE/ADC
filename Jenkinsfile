@@ -4,14 +4,15 @@ pipeline {
   }
   environment {
     CAADE_REGISTRY = 'madajaju'
-    DOCKER_USER = 'madajaju'
-    DOCKER_PASS = 'july2711'
+    DOCKER_USER2 = 'madajaju'
+    DOCKER_PASS2 = 'july2711'
   }
   stages {
     stage('Build') {
       steps {
+        sh 'env'
         sh 'echo ${CAADE_REGISTRY}'
-        sh 'docker login --username=$DOCKER_USER --password=$DOCKER_PASS'
+        sh 'docker login --username=$DOCKER_USER2 --password=$DOCKER_PASS2'
         sh 'npm run-script build'
         sh 'npm run-script publish'
       }
