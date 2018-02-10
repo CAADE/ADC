@@ -38,6 +38,6 @@
     "type": "git",
     "url": "git://github.com/anonymous node/sails user/adc.git"
   },
-  "author": "anonymous node/sails user",
-  "license": ""
+  "author": "Darren Pulsipher",
+  "license": "MIT"
 }
