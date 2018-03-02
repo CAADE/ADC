@@ -8,8 +8,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'env'
-        sh 'echo ${CAADE_REGISTRY}'
         sh 'npm run-script build'
         sh 'npm run-script publish'
       }
