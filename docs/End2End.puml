@@ -3,7 +3,8 @@
 skinparam packageStyle rect
 
 top to bottom direction
-cloud "Hybrid Federation Cloud" as HC #88aaff {
+
+package "Hybrid Federation Cloud" as HFC #55ccff {
   package "Hybrid Orchestrator" as HOH { }
   package "Data Coordinator" as DCH #ff8888 { }
   package "Registry" as RH #cccccc { }
