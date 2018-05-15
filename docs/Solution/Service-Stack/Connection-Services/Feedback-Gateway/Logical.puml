@@ -1,0 +1,14 @@
+@startuml
+
+package "Service-Stack/Connection-Services/Feedback-Gateway" {
+    interface "Service-Stack/Connection-Services/Feedback-Gateway" {
+
+    }
+    CLI ()-- "Service-Stack/Connection-Services/Feedback-Gateway"
+    REST ()-- "Service-Stack/Connection-Services/Feedback-Gateway"
+    Web ()-- "Service-Stack/Connection-Services/Feedback-Gateway"
+
+}
+
+
+@enduml

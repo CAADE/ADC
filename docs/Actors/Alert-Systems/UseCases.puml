@@ -1,0 +1,17 @@
+@startuml
+
+left to right direction
+
+:Alert Systems: as Alert
+:Vehicle: as Car
+
+rectangle "Automotive Data Center" {
+    (Report Accident) as U1
+    (Alert Emergency Vehicle) as U2
+}
+
+Car --> U1
+U1 --> U2
+U2 --> Alert
+
+@enduml

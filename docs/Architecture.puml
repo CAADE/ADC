@@ -1,0 +1,54 @@
+@startuml
+
+skinparam packageStyle rect
+
+top to bottom direction
+package adc  #dddddd {
+    package "Cloud Connected Car" #aaffff {
+      package "Ingestion Engine" {
+      }
+      package "Annotation Engine" {
+      }
+      package "Streaming Engine" {
+      }
+      package "AI Framework" {
+      }
+      package "Raw Storage" {
+      }
+    }
+
+    package "Application Development Framework" #aaffaa {
+      package "Telematics" {}
+      package "Dynamic Mapping" {}
+      package "In Vehicle Infomatics" {}
+      package "ADAS" {}
+
+    }
+
+    package "Connection Services" #ffffaa {
+      package "Notification Gateway" {
+      }
+      package "API Gateways" {
+      }
+      package "Data Coordinator" {
+      }
+      package "Feedback Gateway" {
+      }
+    }
+}
+
+package "Alert Systems" { }
+package "External Systems" { }
+package "Data Centers" { }
+package "Automobile" { }
+
+"Cloud Connected Car" --> "Application Development Framework"
+"Application Development Framework" --> "Connection Services"
+left to right direction
+"Connection Services" --> "Alert Systems"
+"Connection Services" --> "External Systems"
+"Connection Services" --> "Data Centers"
+"Automobile" --> "Cloud Connected Car"
+
+@enduml
+

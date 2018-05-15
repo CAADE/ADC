@@ -1,0 +1,6 @@
+@startuml
+actor User
+
+User -> "Service-Stack/Storage-Services/Raw-Storage": UseCase
+
+@enduml

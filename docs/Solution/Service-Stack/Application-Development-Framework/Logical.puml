@@ -1,0 +1,14 @@
+@startuml
+
+package "Service-Stack/Application-Development-Framework" {
+    interface "Service-Stack/Application-Development-Framework" {
+
+    }
+    CLI ()-- "Service-Stack/Application-Development-Framework"
+    REST ()-- "Service-Stack/Application-Development-Framework"
+    Web ()-- "Service-Stack/Application-Development-Framework"
+
+}
+
+
+@enduml

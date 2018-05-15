@@ -1,0 +1,19 @@
+@startuml
+
+partition "Data Center 1"  #cccccc {
+  (*) --> "Add Cloudlet"
+}
+
+partition "Data Center 2" {
+  "Add Cloudlet" --> "Register Cloudlet "
+  "Register Cloudlet " --> "Register with\nData Exchange"
+  "Register Cloudlet " --> "Register with\nData Coordinator"
+}
+
+partition "Data Center 3" {
+  "Add Cloudlet" --> "Register Cloudlet"
+  "Register Cloudlet" --> "Register with\n Data Exchange"
+  "Register Cloudlet" --> "Register with\n Data Coordinator"
+}
+
+@enduml

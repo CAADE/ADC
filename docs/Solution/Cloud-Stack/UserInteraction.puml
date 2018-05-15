@@ -1,0 +1,10 @@
+@startuml
+actor "Operation Manager" as User
+
+User -> "Cloud-Stack": Add Cloudlet
+User -> "Cloud-Stack": Manage Cloudlets
+User -> "Cloud-Stack": Manage Policies
+User -> "Cloud-Stack": Manage Data Exchange
+User -> "Cloud-Stack": Manage Data Coordination
+
+@enduml

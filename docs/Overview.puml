@@ -1,0 +1,30 @@
+@startuml
+
+skinparam packageStyle rect
+
+top to bottom direction
+package adc  #dddddd {
+  package "Service Stack" #aaffff {
+    package "Cloud Connected Car" { }
+    package "Specialized Applications" { }
+    package "Analytics" { }
+    package "Deep Learning" { }
+  }
+  package "Cloud Stack" #aaffaa {
+    package "Data Collaboration Cloud" { }
+    package Cloudlet { }
+    package "Hybrid Cloud" { }
+    package "Data Lake" { }
+  }
+  package "Hardware Stack" #ffffaa {
+    package "Cloud Scalable Unit" { }
+    package "HPC Scalable Unit" { }
+    package "Data Scalable Unit" { }
+    package "RSD Composible" { }
+
+  }
+}
+"Service Stack" -- "Cloud Stack"
+"Cloud Stack" -- "Hardware Stack"
+
+@enduml

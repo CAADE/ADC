@@ -1,0 +1,18 @@
+@startuml
+
+partition "Service-Stack/Connection-Services/Feedback-Gateway" {
+
+}
+
+partition SubSystem  #cccccc {
+  (*) --> "Create Project"
+  --> "Write Code"
+}
+
+partition "Service-Stack/Connection-Services/Feedback-Gateway" {
+  "Write Code" --> "Test Code"
+  "Test Code" --> "Deploy Code"
+  "Deploy Code" --> (*)
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+package "Service-Stack/Connected-Car-Cloud/AI-Framework" {
+    interface "Service-Stack/Connected-Car-Cloud/AI-Framework" {
+
+    }
+    CLI ()-- "Service-Stack/Connected-Car-Cloud/AI-Framework"
+    REST ()-- "Service-Stack/Connected-Car-Cloud/AI-Framework"
+    Web ()-- "Service-Stack/Connected-Car-Cloud/AI-Framework"
+
+}
+
+
+@enduml

@@ -1,0 +1,44 @@
+@startuml
+
+package "Storage Service" as SS {
+}
+
+package "Connection Services" as CS {
+}
+
+package "Car" {
+}
+
+
+package "Cloud-Connected-Car" {
+    interface "Cloud-Connected-Car" as CCC {
+
+    }
+    CLI ()-- CCC
+    REST ()-- CCC
+    Web ()-- CCC
+
+    class "AI Framework" as AIF {
+    }
+    class "Analytics" as A {
+    }
+    class "Annotation Engine" as AE {
+    }
+    class "Ingestion Engine" as IE {
+     }
+    class "Streaming Engine" as SE {
+
+    }
+    Car --> IE
+    IE --> AE
+    AE --> A
+    IE --> SE
+    A --> AIF
+    IE --> SS
+    AIF --> A
+    A --> SS
+    AIF --> SS
+    SE --> CS
+}
+
+@enduml

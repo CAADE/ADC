@@ -1,0 +1,13 @@
+@startuml
+
+package "API Gateways" {
+  interface "API Gateways" {
+  }
+}
+
+CLI ()-- "API Gateways"
+"REST API" ()-- "API Gateways"
+"Web Portal" ()-- "API Gateways"
+
+
+@enduml

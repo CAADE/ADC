@@ -1,0 +1,11 @@
+@startuml
+
+package "Service-Stack/Storage-Services" {
+component component1
+component component2
+interface i1
+
+}
+i1 - component1
+component1 --> component2
+@enduml

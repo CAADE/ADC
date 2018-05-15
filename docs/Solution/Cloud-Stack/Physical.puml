@@ -1,0 +1,67 @@
+@startuml
+
+package "DataCenter 2" {
+  interface REST as RESTCL2
+  interface REST as RESTDE2
+  Component Cloudlet as CL2
+  Component "Data Exchange" as DE2
+
+  DE2 -- RESTDE2 : 3030
+  CL2 -- RESTCL2 : 9000
+}
+
+package "DataCenter 3" {
+  interface REST as RESTCL3
+  interface REST as RESTDE3
+  Component Cloudlet as CL3
+  Component "Data Exchange" as DE3
+
+  CL3 -- RESTCL3 : 9000
+  DE3 -- RESTDE3 : 3030
+}
+
+package "DataCenter 1" {
+    interface Web as Web1
+    interface CLI as CLI1
+    interface REST as REST1
+    component "C3" as C31
+    Web1 -- C31 : 8000
+    CLI1 -- C31 : 5000
+    REST1 -- C31 : 6000
+
+
+    component "Data Exchange" as DE1
+    interface Web as WebDE1
+    interface REST as RESTDE1
+    WebDE1 -- DE1 : 3000
+    RESTDE1 -- DE1 : 3030
+
+    component "Data Coordinator" as DC1
+    component "Data Fabric" as DF1
+    database "Data Lake" as DL1
+    component "Cloudlet" As CL1
+    interface REST as RESTCL1
+    CL1 - RESTCL1 : 9000
+    C31 --> CL1
+    DE1 --> CL1
+    C31 --> DL1
+    DF1 --> DL1
+    DC1 --> DL1
+    DE1 --> DL1
+}
+
+
+rectangle "network" {
+9001 - RESTCL1
+8001 -- Web1
+5001 -- CLI1
+6001 -- REST1
+3001 -- WebDE1
+3031 -- RESTDE1
+9002 - RESTCL2
+3032 - RESTDE2
+9003 - RESTCL3
+3033 - RESTDE3
+}
+
+@enduml

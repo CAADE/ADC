@@ -1,0 +1,28 @@
+@startuml
+
+
+left to right direction
+
+actor Automobile as Car
+actor "Alert Systems" as AS
+actor "External Applications" as EA
+actor "Mobility Services" as MS
+actor "Application Developer" as AD
+actor "Operation Manager" as Ops
+actor "Stack Developer" as Stack
+rectangle adc #dddddd {
+  Car --> (Transmit Telemetry)
+  (Transmit Telemetry) -- (ADAS)
+  (Transmit Telemetry) -- (Dynamic Mapping)
+  (Transmit Telemetry) -- (In Vehicle Infomatics)
+  (Transmit Telemetry) -- (Telematics)
+  (Telematics) --> AS
+  (Telematics) --> MS
+  (Dynamic Mapping) --> AS
+  (In Vehicle Infomatics) --> EA
+  Ops --> (Manage Infrastructure)
+  AD --> (Manage Applications)
+  Stack --> (Manage Services)
+}
+
+@enduml

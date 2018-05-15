@@ -2,12 +2,13 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker build . -t ${CAADE_REGISTRY}/adc-car",
-    "publish": "docker push ${CAADE_REGISTRY}/adc-car",
-    "deploy": "docker push ${CAADE_REGISTRY}/adc-car"
+    "build": "docker build . -t madajaju/adc_car",
+    "deploy": "docker push madajaju/adc_car",
+    "publish": "docker push madajaju/adc_car"
   },
   "dependencies": {
     "micro": "latest",
-    "node-fetch": "latest"
+    "node-fetch-json": "latest",
+    "kafka-node": "latest"
   }
 }

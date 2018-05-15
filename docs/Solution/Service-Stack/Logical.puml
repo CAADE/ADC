@@ -1,0 +1,52 @@
+@startuml
+
+skinparam packageStyle rect
+skinparam interface {
+  backgroundColor black
+}
+top to bottom direction
+package "Service Stack"  #dddddd {
+  package "Cloud Clonnected Car" #aaffff {
+        package "Ingestion Engine" { }
+        package "Annotation Engine" #aaffaa { }
+        package "Streaming Engine" #aaffaa { }
+        package "AI Framework" #aaffaa { }
+        package "Analytics" #aaffaa { }
+  }
+  package "Storage Services" #aaffff {
+        package "Raw Storage" { }
+        package "Secondary Storage" { }
+  }
+  package "Connection Services" #aaffff {
+      package "Notification Gateway" #aaffaa { }
+      package "Application Store" #aaffaa { }
+      package "API Gateways" #aaffaa { }
+      package "Feedback Gateway" #aaffaa { }
+  }
+  package "Application Development Framework" #aaffff {
+  }
+}
+
+package "Alert Systems" { }
+package "External Systems" { }
+package "Automobile" { }
+
+"Notification Gateway" --> "Alert Systems"
+"Automobile" --> "Ingestion Engine"
+"Ingestion Engine" --> "Streaming Engine"
+"Streaming Engine" --> "Notification Gateway"
+"Streaming Engine" --> "Feedback Gateway"
+"Feedback Gateway" --> "Automobile"
+"Ingestion Engine" --> "Annotation Engine"
+"Annotation Engine" --> "Secondary Storage"
+"Annotation Engine" --> "Analytics"
+"Annotation Engine" --> "AI Framework"
+"Secondary Storage" --> "AI Framework"
+"AI Framework" --> "Secondary Storage"
+"Ingestion Engine" --> "Raw Storage"
+"Secondary Storage" --> "API Gateways"
+"Analytics" --> "Secondary Storage"
+"Analytics" --> "AI Framework"
+
+@enduml
+

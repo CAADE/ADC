@@ -1,0 +1,18 @@
+@startuml
+
+partition "Cloud-Stack/Data-Fabric" {
+
+}
+
+partition SubSystem  #cccccc {
+  (*) --> "Create Project"
+  --> "Write Code"
+}
+
+partition "Cloud-Stack/Data-Fabric" {
+  "Write Code" --> "Test Code"
+  "Test Code" --> "Deploy Code"
+  "Deploy Code" --> (*)
+}
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+
+left to right direction
+
+skinparam usecase {
+  BackgroudnColor #ffffaa
+  BackgroundColor<<Main>> #aaffff
+}
+actor :User: <<Person>>
+actor :SubSystem: <<Person>>
+
+
+rectangle "Cloud-Stack/Data-Fabric" {
+UseCase UC1 <<Main>> as "Use Case1"
+UseCase UC2  as "Use Case2"
+
+
+User --> UC1
+UC1 --> UC2
+UC2 --> SubSystem
+}
+
+@enduml

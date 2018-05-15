@@ -1,0 +1,14 @@
+@startuml
+
+package "Cloud-Stack/Data-Exchange" {
+    interface "Cloud-Stack/Data-Exchange" {
+
+    }
+    CLI ()-- "Cloud-Stack/Data-Exchange"
+    REST ()-- "Cloud-Stack/Data-Exchange"
+    Web ()-- "Cloud-Stack/Data-Exchange"
+
+}
+
+
+@enduml

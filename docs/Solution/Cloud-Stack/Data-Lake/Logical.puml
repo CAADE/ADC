@@ -1,0 +1,14 @@
+@startuml
+
+package "Cloud-Stack/Data-Lake" {
+    interface "Cloud-Stack/Data-Lake" {
+
+    }
+    CLI ()-- "Cloud-Stack/Data-Lake"
+    REST ()-- "Cloud-Stack/Data-Lake"
+    Web ()-- "Cloud-Stack/Data-Lake"
+
+}
+
+
+@enduml

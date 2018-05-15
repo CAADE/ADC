@@ -1,0 +1,17 @@
+@startuml
+
+
+partition "Automobile"  #cccccc {
+  (*) --> "Drive Car"
+  "Drive Car" --> "Cross Geo Borders"
+}
+
+partition "Automotive Data Center" #aaffaa {
+  (*) --> "Register Car"
+  "Drive Car" --> "Transmit Telemetry"
+  "Cross Geo Borders" --> "Switch Data Center"
+  "Switch Data Center" --> "Deregister Car"
+  "Deregister Car" --> "Register Car"
+}
+
+@enduml

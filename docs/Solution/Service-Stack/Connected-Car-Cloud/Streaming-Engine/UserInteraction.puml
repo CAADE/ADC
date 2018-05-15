@@ -1,0 +1,6 @@
+@startuml
+actor User
+
+User -> "Service-Stack/Connected-Car-Cloud/Streaming-Engine": UseCase
+
+@enduml

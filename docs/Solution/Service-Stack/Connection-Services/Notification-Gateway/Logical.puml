@@ -1,0 +1,14 @@
+@startuml
+
+package "Service-Stack/Connection-Services/Notification-Gateway" {
+    interface "Service-Stack/Connection-Services/Notification-Gateway" {
+
+    }
+    CLI ()-- "Service-Stack/Connection-Services/Notification-Gateway"
+    REST ()-- "Service-Stack/Connection-Services/Notification-Gateway"
+    Web ()-- "Service-Stack/Connection-Services/Notification-Gateway"
+
+}
+
+
+@enduml

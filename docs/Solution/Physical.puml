@@ -1,0 +1,43 @@
+@startuml
+
+
+skinparam packageStyle rect
+
+top to bottom direction
+
+package adc  #dddddd {
+
+  package "Software Stack" #ffffaa {
+    package "Cloud Connected\nCar Services" { }
+    package "Connection Services" { }
+    package "Application\nDevelopment Framework" { }
+  }
+  package "Data Center" as DC #ffffff {
+      package "Cloud Stack" #aaffaa {
+        package "Application Orchestration" { }
+        package "Local Service/App Registry" as LSAR { }
+        package "Cloud Control" { }
+      }
+      package "Hardware Stack" #aaffff {
+        package "Compute" { }
+        package "Storage" { }
+        package "Network" { }
+      }
+  }
+  package "Federatated Cloud" as FC #ffaaaa {
+      package "Global Service/App Registry" as GSAR { }
+      package "Global Policy Engine" as GPE { }
+      package "Data Exchange" as DE { }
+  }
+  package "Data Center Geo 1" as DCG1 { }
+  package "Data Center Geo 2" as DCG2 { }
+  FC --> "Cloud Stack"
+  FC -> DCG1
+  FC --> DCG2
+  "Software Stack" --> FC
+}
+
+"Cloud Stack" --> "Hardware Stack"
+
+@enduml
+

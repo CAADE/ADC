@@ -3,23 +3,26 @@ pipeline {
     label 'node'
   }
   environment {
-    CAADE_REGISTRY = 'node0:5000'
+    CAADE_REGISTRY = TBD
+    DOCKER_USER = TBD
+    DOCKER_PASS = TBD
   }
   stages {
-    stage('Build') {
-      steps {
-        sh 'npm run-script build'
-        sh 'npm run-script publish'
-      }
-    }
     stage('Build Docs') {
       steps {
         sh 'git submodule update --init --recursive'
         sh 'npm run-script build-doc'
       }
     }
+    stage('Build') {
+      steps {
+        sh 'docker login --username=$DOCKER_USER --password=$DOCKER_PASS'
+        sh 'npm run-script build'
+        sh 'npm run-script deploy-apps'
+      }
+    }
     stage('Test') {
-      agent {
+    agent {
         label 'docker-master'
       }
       steps {

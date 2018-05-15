@@ -1,0 +1,14 @@
+@startuml
+
+package "Cloud-Stack/Data-Fabric" {
+    interface "Cloud-Stack/Data-Fabric" {
+
+    }
+    CLI ()-- "Cloud-Stack/Data-Fabric"
+    REST ()-- "Cloud-Stack/Data-Fabric"
+    Web ()-- "Cloud-Stack/Data-Fabric"
+
+}
+
+
+@enduml

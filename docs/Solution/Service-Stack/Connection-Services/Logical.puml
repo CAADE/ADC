@@ -1,0 +1,12 @@
+@startuml
+
+package "Connection-Services" {
+   REST ()-- "API Gateways"
+   CLI ()-- "API Gateways"
+   Web ()-- "API Gateways"
+   REST ()-- "Feedback Gateway"
+   REST ()-- "Notification Gateway"
+}
+
+
+@enduml

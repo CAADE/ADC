@@ -1,0 +1,42 @@
+@startuml
+
+package  "Cloud-Stack" {
+  cloud "Public Clouds" as PC
+  cloud "Cloudlet" as FC {
+    artifact Registry
+    artifact "Policy Engine"
+    artifact "Identity Management"
+    node "Data Exchange"
+  }
+  node "Data Center 1" {
+    node "C3 Cloud 1" as HC1
+    cloud "Private Cloud A" as PCA
+    cloud "Private Cloud B" as PCB
+    database "Data Lake 1" as DL1
+    HC1 --> PCA
+    HC1 --> PCB
+    HC1 ---> PC
+  }
+  node "Data Center 2" {
+    node "C3 Cloud 2" as HC2
+    cloud "Private Cloud C" as PCC
+    cloud "Private Cloud D" as PCD
+    database "Data Lake 2" as DL2
+    HC2 --> PCC
+    HC2 --> PCD
+    HC2 ---> PC
+  }
+  node "Data Center 3" {
+    node "C3 Cloud 3" as HC3
+    cloud "Private Cloud E" as PCE
+    cloud "Private Cloud F" as PCF
+    database "Data Lake 3" as DL3
+    HC3 --> PCE
+    HC3 --> PCF
+  }
+  FC --> HC1
+  FC --> HC2
+  FC --> HC3
+}
+
+@enduml

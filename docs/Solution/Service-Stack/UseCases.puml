@@ -1,0 +1,32 @@
+@startuml
+
+left to right direction
+
+skinparam usecase {
+  BackgroundColor #ffffaa
+  BackgroundColor<<Main>> #aaffff
+}
+actor :Vehicle: as Car
+actor :External Systems: as ES
+
+
+rectangle "Service Stack" #aaffaa {
+    UseCase UC1 as "Transmit Telemetry"
+    UseCase UC2 as "Transform Data"
+    UseCase UC3 as "Stream Data"
+    UseCase UC4 as "Notify Systems"
+    UseCase UC5 as "Alert Systems"
+    UseCase UC6 as "Learn from Data"
+
+    Car --> UC1
+    UC1 -> UC2
+    UC1 --> UC3
+    UC3 --> UC5
+    UC2 --> UC4
+    UC4 --> ES
+    UC5 --> ES
+    UC2 -> UC6
+    UC6 -> UC2
+}
+
+@enduml

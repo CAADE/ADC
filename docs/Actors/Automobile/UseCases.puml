@@ -1,0 +1,19 @@
+@startuml
+
+left to right direction
+
+:Automobile: as Car
+
+rectangle "ADC" {
+    (Register Car) as U1
+    (Deregister Car) as U2
+    (Switch Data Center) as U3
+    (Transmit Telemetry) as U4
+}
+
+Car --> U1
+Car --> U2
+Car --> U3
+Car --> U4
+
+@enduml

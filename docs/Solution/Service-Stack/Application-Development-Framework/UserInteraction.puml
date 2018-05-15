@@ -1,0 +1,6 @@
+@startuml
+actor User
+
+User -> "Service-Stack/Application-Development-Framework": UseCase
+
+@enduml

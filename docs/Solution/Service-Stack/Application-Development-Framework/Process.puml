@@ -1,0 +1,18 @@
+@startuml
+
+partition "Service-Stack/Application-Development-Framework" {
+
+}
+
+partition SubSystem  #cccccc {
+  (*) --> "Create Project"
+  --> "Write Code"
+}
+
+partition "Service-Stack/Application-Development-Framework" {
+  "Write Code" --> "Test Code"
+  "Test Code" --> "Deploy Code"
+  "Deploy Code" --> (*)
+}
+
+@enduml

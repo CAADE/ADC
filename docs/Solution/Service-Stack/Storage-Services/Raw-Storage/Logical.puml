@@ -1,0 +1,14 @@
+@startuml
+
+package "Service-Stack/Storage-Services/Raw-Storage" {
+    interface "Service-Stack/Storage-Services/Raw-Storage" {
+
+    }
+    CLI ()-- "Service-Stack/Storage-Services/Raw-Storage"
+    REST ()-- "Service-Stack/Storage-Services/Raw-Storage"
+    Web ()-- "Service-Stack/Storage-Services/Raw-Storage"
+
+}
+
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+|actorName|
+start
+|#ffffaa|adc|
+:activity1;
+|actor2|
+:activity2;
+stop
+@enduml

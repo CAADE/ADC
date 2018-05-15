@@ -1,0 +1,28 @@
+@startuml
+
+partition "Alert Systems"  #cccccc {
+  (*) ---> "Register with ADC"
+}
+
+partition "Automotive Data Center" #aaffaa {
+  "Register with ADC" --> "Register"
+}
+
+partition "Vehicle" #ffaaaa {
+   "Drive" --> "Accident"
+}
+
+partition "Automotive Data Center" {
+  "Accident" --> "Report Accident"
+  "Report Accident" --> "Determine Location"
+  "Determine Location" --> "Find Emergency Vehicle"
+}
+
+partition "Alert Systems" {
+  "Find Emergency Vehicle"  --> "Dispatch Emergency Vehicle"
+}
+
+partition "Vehicle" {
+   "Dispatch Emergency Vehicle" --> "Save Lifes"
+}
+@enduml

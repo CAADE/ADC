@@ -1,0 +1,14 @@
+@startuml
+
+package "Service-Stack/Connected-Car-Cloud/Analytics" {
+    interface "Service-Stack/Connected-Car-Cloud/Analytics" {
+
+    }
+    CLI ()-- "Service-Stack/Connected-Car-Cloud/Analytics"
+    REST ()-- "Service-Stack/Connected-Car-Cloud/Analytics"
+    Web ()-- "Service-Stack/Connected-Car-Cloud/Analytics"
+
+}
+
+
+@enduml

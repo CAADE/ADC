@@ -1,0 +1,27 @@
+@startuml
+
+left to right direction
+
+skinparam usecase {
+  BackgroudnColor #ffffaa
+  BackgroundColor<<Main>> #aaffff
+}
+actor :Ops Manager: as OPS
+
+
+rectangle "Cloud-Stack" {
+UseCase UC1 as "Add Cloudlet"
+UseCase UC2 as "Manage Cloudlets"
+UseCase UC3 as "Manage Policies"
+UseCase UC4 as "Manage Data Exchange"
+UseCase UC5 as "Manage Data Coordination"
+
+OPS --> UC1
+OPS --> UC2
+OPS --> UC3
+OPS --> UC4
+OPS --> UC5
+UC1 --> UC2
+}
+
+@enduml

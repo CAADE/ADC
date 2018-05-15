@@ -1,0 +1,54 @@
+@startuml
+
+|Automobile|
+start
+:Collect Data;
+|#aaffaa|Cloud Connected Car|
+:Ingestion Engine;
+split
+    |Cloud Connected Car|
+    :Annotation Engine;
+    split
+        :Secondary Storage;
+    split again
+        :Analytics;
+        :Secondary Storage;
+    split again
+        :Analytics;
+        :AI Framework;
+        :Secondary Storage;
+    split end
+    split
+        |Connection Services|
+        :API Gateway;
+    split again
+        |Connection Services|
+        :Data Exchange;
+    split end
+    stop
+split again
+    |Cloud Connected Car|
+    :Raw Storage;
+    |Connection Services|
+    :Data Coordinator;
+    |External|
+    :Data Coordinator;
+    stop
+split again
+    |Cloud Connected Car|
+    :Streaming Engine;
+    split
+      |#ffffaa|Connection Services|
+      :Alert Gateway;
+      |Automobile|
+      :Receive Data;
+      stop
+    split again
+      |Connection Services|
+      :Notification Gateway;
+      |External|
+      :Receive Data;
+      stop
+    split end
+end split
+@enduml

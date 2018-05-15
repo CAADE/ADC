@@ -2,9 +2,9 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "build": "docker build . -t ${CAADE_REGISTRY}/adc-ingestion",
-    "publish": "docker push ${CAADE_REGISTRY}/adc-ingestion",
-    "deploy": "docker push ${CAADE_REGISTRY}/adc-ingestion"
+    "build": "docker build . -t madajaju/adc-ingestion",
+    "publish": "docker push madajaju/adc-ingestion",
+    "deploy": "docker push madajaju/adc-ingestion"
   },
   "dependencies": {
     "micro": "latest",

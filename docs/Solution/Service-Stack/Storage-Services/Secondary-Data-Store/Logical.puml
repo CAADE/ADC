@@ -1,0 +1,14 @@
+@startuml
+
+package "Service-Stack/Storage-Services/Secondary-Data-Store" {
+    interface "Service-Stack/Storage-Services/Secondary-Data-Store" {
+
+    }
+    CLI ()-- "Service-Stack/Storage-Services/Secondary-Data-Store"
+    REST ()-- "Service-Stack/Storage-Services/Secondary-Data-Store"
+    Web ()-- "Service-Stack/Storage-Services/Secondary-Data-Store"
+
+}
+
+
+@enduml

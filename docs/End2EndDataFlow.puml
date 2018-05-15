@@ -1,0 +1,44 @@
+@startuml
+skinparam packageStyle rect
+
+top to bottom direction
+package "Automotive Data Center End To End" #dddddd {
+  package "DataCenter Cloud" #ffaa88 {
+      package Ingestion { }
+      package Analytics { }
+      package Storage { }
+  }
+  package Connectivity #ffffaa {
+    package Teleco {
+        package 5G { }
+        package Wifi { }
+    }
+    package "Edge Cloud" {
+      package "Ingestion  " { }
+      package "Storage  " { }
+      package "Analytics " { }
+      package "Egress" { }
+    }
+    package Fog { }
+  }
+  package InVehicle #aaffaa {
+      package "Sensor Fusion" { }
+      package "Storage " { }
+      package "Analytics Engine" { }
+      package "Upload Engine" { }
+      "Analytics Engine" --> "Upload Engine"
+   }
+}
+"Upload Engine" --> "5G"
+"Upload Engine" --> "Wifi"
+"5G" --> "Ingestion  "
+"Wifi" --> "Ingestion  "
+"Egress" --> Ingestion
+
+@enduml
+
+"Upload Engine" needs to be intelligent to send data at the best times.
+
+"Edge Cloud" can be owned by Telecos or by the Automotive companies
+Ford is building a couple of 10 MW data centers in Michigan
+"Edge cloud" is a edge data center that is implemented with a cloud.

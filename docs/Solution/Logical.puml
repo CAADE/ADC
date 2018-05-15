@@ -1,0 +1,67 @@
+@startuml
+
+skinparam packageStyle rect
+skinparam interface {
+  backgroundColor black
+}
+package "Application Development Framework" #aaffaa {
+  package "Telematics" {}
+  package "Dynamic Mapping" {}
+  package "In Vehicle Infomatics" {}
+  package "ADAS" {}
+
+}
+
+top to bottom direction
+package adc  #dddddd {
+    package "Cloud Connected Car" #aaffff {
+      package "Ingestion Engine" { }
+      package "Annotation Engine" #aaffaa { }
+      package "Streaming Engine" #aaffaa { }
+      package "AI Framework" #aaffaa { }
+      package "Raw Storage" { }
+      package "Secondary Storage" { }
+      package "Analytics" #aaffaa { }
+    }
+
+
+    package "Connection Services" #ffffaa {
+      package "Notification Gateway" #aaffaa { }
+      package "Application Store" #aaffaa { }
+      package "API Gateways" #aaffaa { }
+      package "Data Coordinator" { }
+      package "Feedback Gateway" #aaffaa { }
+      package "Data Exchange" { }
+    }
+}
+
+package "Alert Systems" { }
+package "External Systems" { }
+package "Data Centers" { }
+package "Automobile" { }
+
+"Automobile" --> "Cloud Connected Car"
+"Data Coordinator" ---> "Data Centers"
+"Data Exchange" --> "External Systems"
+"Notification Gateway" ---> "Alert Systems"
+"Automobile" --> "Ingestion Engine"
+"Ingestion Engine" --> "Streaming Engine"
+"Streaming Engine" --> "Notification Gateway"
+"Streaming Engine" --> "Feedback Gateway"
+"Feedback Gateway" --> "Automobile"
+"Ingestion Engine" --> "Annotation Engine"
+"Annotation Engine" --> "Secondary Storage"
+"Annotation Engine" --> "Analytics"
+"Annotation Engine" --> "AI Framework"
+"Secondary Storage" --> "AI Framework"
+"AI Framework" --> "Secondary Storage"
+"Ingestion Engine" --> "Raw Storage"
+"API Gateways" --> "Data Exchange"
+"Secondary Storage" --> "API Gateways"
+"Raw Storage" --> "Data Coordinator"
+"Secondary Storage" --> "Data Coordinator"
+"Analytics" --> "Secondary Storage"
+"Analytics" --> "AI Framework"
+
+@enduml
+

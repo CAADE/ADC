@@ -1,0 +1,7 @@
+@startuml
+
+partition "API Gateways" {
+
+}
+
+@enduml

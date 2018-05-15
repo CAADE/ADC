@@ -1,0 +1,6 @@
+@startuml
+actor User
+
+User -> "Service-Stack/Connection-Services/Notification-Gateway": UseCase
+
+@enduml

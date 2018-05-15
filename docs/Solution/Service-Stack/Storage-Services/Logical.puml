@@ -1,0 +1,24 @@
+@startuml
+
+package "Storage-Services" {
+    interface "Storage-Services" as SS {
+
+    }
+    CLI ()-- SS
+    REST ()-- SS
+    Web ()-- SS
+
+    package "Raw Storage" as RS {
+    }
+    package "Primary Data Store" as PDS {
+    }
+    package "Secondary Data Store" as SDS {
+    }
+
+    SS --> RS
+    SS --> PDS
+    SS --> SDS
+}
+
+
+@enduml

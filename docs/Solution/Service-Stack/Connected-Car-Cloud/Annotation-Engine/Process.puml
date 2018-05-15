@@ -1,0 +1,18 @@
+@startuml
+
+partition "Service-Stack/Connected-Car-Cloud/Annotation-Engine" {
+
+}
+
+partition SubSystem  #cccccc {
+  (*) --> "Create Project"
+  --> "Write Code"
+}
+
+partition "Service-Stack/Connected-Car-Cloud/Annotation-Engine" {
+  "Write Code" --> "Test Code"
+  "Test Code" --> "Deploy Code"
+  "Deploy Code" --> (*)
+}
+
+@enduml

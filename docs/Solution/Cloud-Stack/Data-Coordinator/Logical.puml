@@ -1,0 +1,14 @@
+@startuml
+
+package "Cloud-Stack/Data-Coordinator" {
+    interface "Cloud-Stack/Data-Coordinator" {
+
+    }
+    CLI ()-- "Cloud-Stack/Data-Coordinator"
+    REST ()-- "Cloud-Stack/Data-Coordinator"
+    Web ()-- "Cloud-Stack/Data-Coordinator"
+
+}
+
+
+@enduml

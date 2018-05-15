@@ -1,0 +1,23 @@
+@startuml
+|Alert Systems|
+start
+|#ffffaa|Automotive Data Center|
+:Register Alert System;
+stop
+|#ffaaaa|Vehicle|
+start
+:Drive;
+:Crash;
+|Automotive Data Center|
+:Report Accident;
+:Ingestion Engine;
+:Streaming Engine;
+:Determine Location;
+:Get Photo;
+:Lookup Alert Systems;
+|Alert Systems|
+:Notify Alert Systems;
+:Find Emergency Response Vehicle;
+:Dispatch Emergency Repsonse Vehicle;
+stop
+@enduml

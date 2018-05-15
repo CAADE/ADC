@@ -1,0 +1,12 @@
+@startuml
+
+package  "Service-Stack/Connected-Car-Cloud/Analytics" {
+  cloud cloud1
+  node node1
+  artifact artifact1
+  storage objectStore
+  database db1
+  folder folder1
+}
+
+@enduml

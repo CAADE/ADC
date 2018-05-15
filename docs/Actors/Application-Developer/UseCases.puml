@@ -1,0 +1,13 @@
+@startuml
+
+left to right direction
+
+:Application Developer: as Actor
+
+rectangle "Automotive Data Center" {
+    (Manage Applications) as U1
+}
+
+Actor --> U1
+
+@enduml

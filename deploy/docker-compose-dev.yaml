@@ -1,36 +1,33 @@
-
-version: '3'
+version: '3.2'
 
 services:
-  car:
-    image: adc/car
-    ports:
-      - "1338:1338"
-    secrets:
-      - source: car-config-v1
-        target: ./config
-  ingestion:
-    image: adc/ingestion
-    ports:
-      - 2300:2300
-  # mongo:
-  #   image: mongo
-  #   expose:
-  #        - 27017
+  # car:
+  #   image: adc/car
   #   ports:
-  #        - "27017:27017"
-  adc:
-    image: adc/web
-    expose:
-      - 1337
+  #     - "1338:1338"
+  #   secrets:
+  #     - source: car-config-v1
+  #       target: ./config
+  car:
+     image: madajaju/adc_car
+  zookeeper:
+      image: wurstmeister/zookeeper
+      ports:
+        - "2181:2181"
+  ingestion:
+    image: madajaju/adc-ingestion
     ports:
-      - "1337:1337"
-  # uservice-name :
-  #  image: adc/uservice-name
-  #  deploy:
-  #          mode: replicated
-  #          replicas: 5
-
-  secrets:
-    car-config-v1:
-      file: ./car-config.js
+    - target: 9094
+      published: 9094
+      protocol: tcp
+      mode: host
+    environment:
+      HOSTNAME_COMMAND: "docker info | grep ^Name: | cut -d' ' -f 2"
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+      KAFKA_ADVERTISED_PROTOCOL_NAME: OUTSIDE
+      KAFKA_ADVERTISED_PORT: 9094
+      KAFKA_PROTOCOL_NAME: INSIDE
+      KAFKA_PORT: 9092
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock

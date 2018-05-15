@@ -1,0 +1,126 @@
+@startuml
+
+skinparam packageStyle rect
+
+top to bottom direction
+cloud "Hybrid Federation Cloud" as HC #88aaff {
+  package "Hybrid Orchestrator" as HOH { }
+  package "Data Coordinator" as DCH #ff8888 { }
+  package "Registry" as RH #cccccc { }
+  package "Control" as CH #aaffff { }
+  HOH --> DCH
+  HOH --> CH
+  HOH --> RH
+}
+note right of RH #cccccc
+    Registry has the definitions of all of the Services
+    across all of the clouds. This gives the ability
+    to push updates to services and applications
+    across the distributed infrastrcture.
+end note
+
+note left of DCH #ff8888
+    "Data Coordinator" makes sure that data
+    is moved at the right time to the right location,
+    or that services are spun up on the apprioriate
+    Cloud at the right time.
+end note
+
+note top of CH #aaffff
+Controller schedules services
+on the individual clouds
+end note
+
+package "Data Center Cloud" as DCC #ffaa88 {
+  package Services as SD #cccccc {
+    package Ingestion as ID #ff8888 { }
+    package "Analytics Engine" as AED { }
+    package Storage as SDCC { }
+    package Egress as ED #ff8888 { }
+  }
+  package SDI as SDID #aaffff { }
+  package Hardware as HDCC { }
+}
+
+package Connectivity #ffff88 {
+  package Teleco as TC { }
+  package "Edge Cloud" as ECC {
+    package Services as ECS #cccccc {
+      package "Ingestion" as IC #ff8888 { }
+      package "Storage" as SC { }
+      package "Analytics" as AC { }
+      package "Egress" as EC #ff8888 { }
+    }
+    package "Radio" as RC { }
+    package SDI as SDIC #aaffff { }
+    package Hardware as HwC { }
+  note as Note1
+    control, compute, storage, network
+  end Note
+  }
+}
+
+package InVehicle #88ff88 {
+  package SDI as SDII #aaffff { }
+  package "Services" as SI #cccccc {
+    package "Cluster/Safety" {
+        package "Sensor Fusion" as SFI { }
+        package "Storage"  as SFIS{ }
+        package "Analytics Engine" as AES { }
+        package "Upload Engine" as UES #ff8888 { }
+        package "Radio" as RIV { }
+    }
+    package "Driving" { }
+    package "Entertainment" { }
+  }
+  package Hardware as HI { }
+  SDII --> HI
+}
+
+note bottom of InVehicle  #aaffaa
+Hypothosis: Every Car is a Vehicle Cloud
+Where are we today. Not in the Vehicle Cloud
+Where we might need to be first: Multiple Vehicle clouds in the Car. Ex. IVI different from Monitoring
+Where we want to get to: Every Car is a one Vehicle Cloud
+Cloud Orchestrated Vehicle
+end note
+
+CH --> SDII
+CH --> SDIC
+CH --> SDID
+
+RH --> SI
+RH --> ECS
+RH --> SD
+
+note bottom of UES #ff8888
+"Upload Engine" needs to be intelligent
+to send data at the best times. It coordinates
+with the Data Coordinator.
+end note
+
+note bottom of ECC
+"Edge Cloud" can be owned by Telcos
+or by the Automotive companies
+
+"Edge cloud" is a edge data center that
+is implemented with a cloud.
+
+Ford is building a couple of 10 MW
+data centers in Michigan
+
+This could be a City, Telco, Automotive, Enterprise
+end note
+
+note as GeneralNote
+We need to show the vision of where things need to go.
+We need to then show the roadmap on how to get there.
+Now: Data Center Cloud
+Tomorrow: Edge Cloud
+Next week: InVehicle Cloud
+1. Show how we plug into the current InVehicle limitations.
+2. A lite SDI layer in Car.
+3.
+end note
+@enduml
+

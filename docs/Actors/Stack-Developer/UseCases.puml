@@ -1,0 +1,15 @@
+@startuml
+
+left to right direction
+
+:Stack Developer: as Car
+
+rectangle "Automotive Data Center" #aaffaa {
+    (Manage Application Stacks) as U1
+    (Manage Services) as U2
+}
+
+Car --> U1
+Car --> U2
+
+@enduml

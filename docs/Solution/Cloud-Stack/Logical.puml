@@ -1,0 +1,43 @@
+@startuml
+
+package "Cloud Stack" {
+    interface "Cloud Stack" {
+
+    }
+    CLI ()-- "Cloud Stack"
+    REST ()-- "Cloud Stack"
+    Web ()-- "Cloud Stack"
+
+    package Cloudlet {
+    }
+
+    package "Common Cloud Core" {
+    }
+
+    package "Data Coordinator" {
+    }
+
+    package "Data Fabric" {
+    }
+
+    package "Data Exchange" {
+
+    }
+
+    package "Data Lake" {
+
+    }
+
+    Cloudlet --> "Common Cloud Core"
+    Cloudlet --> "Data Coordinator"
+    Cloudlet --> "Data Fabric"
+    "Data Exchange" --> Cloudlet
+    "Data Fabric" --> "Data Lake"
+    "Data Coordinator" --> "Data Lake"
+    "Cloud Stack" --> Cloudlet
+    "Cloud Stack" --> "Common Cloud Core"
+    "Cloud Stack" -> "Data Exchange"
+}
+
+
+@enduml

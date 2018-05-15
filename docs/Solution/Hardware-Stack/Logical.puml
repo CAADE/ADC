@@ -1,0 +1,14 @@
+@startuml
+
+package "Hardware-Stack" {
+    interface "Hardware-Stack" {
+
+    }
+    CLI ()-- "Hardware-Stack"
+    REST ()-- "Hardware-Stack"
+    Web ()-- "Hardware-Stack"
+
+}
+
+
+@enduml

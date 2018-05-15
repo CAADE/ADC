@@ -1,0 +1,21 @@
+@startuml
+|Automobile|
+start
+|#ffffaa|Automotive Data Center|
+:Register Car;
+|Automobile|
+repeat
+    while(same geo?)
+        :Drive;
+        |Automotive Data Center|
+        :Transmit Telemetry;
+    endwhile
+    :Switch Data Center;
+    :Deregister Car;
+    :Register Car;
+|Automobile|
+repeat while(Car Operating)
+:Deregister Car;
+
+stop
+@enduml

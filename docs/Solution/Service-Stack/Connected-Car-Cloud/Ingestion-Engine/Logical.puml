@@ -1,0 +1,14 @@
+@startuml
+
+package "Service-Stack/Connected-Car-Cloud/Ingestion-Engine" {
+    interface "Service-Stack/Connected-Car-Cloud/Ingestion-Engine" {
+
+    }
+    CLI ()-- "Service-Stack/Connected-Car-Cloud/Ingestion-Engine"
+    REST ()-- "Service-Stack/Connected-Car-Cloud/Ingestion-Engine"
+    Web ()-- "Service-Stack/Connected-Car-Cloud/Ingestion-Engine"
+
+}
+
+
+@enduml
