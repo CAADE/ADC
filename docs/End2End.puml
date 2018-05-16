@@ -13,6 +13,7 @@ package "Hybrid Federation Cloud" as HFC #55ccff {
   HOH --> CH
   HOH --> RH
 }
+
 note right of RH #cccccc
     Registry has the definitions of all of the Services
     across all of the clouds. This gives the ability
