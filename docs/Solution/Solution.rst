@@ -12,7 +12,7 @@ Actors
     :glob:
     :maxdepth: 1
 
-    Actor/index
+    /Actor/index
 
 High level Use Cases
 --------------------
@@ -20,14 +20,14 @@ High level Use Cases
     :glob:
     :maxdepth: 1
 
-    UseCase/index
+    /UseCase/index
 
-.. image:: UseCases.png
+.. image:: /UseCase/UseCases.png
 
 High Level Overview
 -------------------
 
-.. image:: Overview.png
+.. image:: /Overview.png
 
 :ref:`SubSystem-Service-Stack`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

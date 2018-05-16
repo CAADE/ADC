@@ -1,10 +1,11 @@
-adc
-===============================================
+Automotive Data Center
+======================
 
 .. toctree::
    :maxdepth: 1
    :caption: Overview
 
+   Home
    Solution/Solution
 
 .. toctree::

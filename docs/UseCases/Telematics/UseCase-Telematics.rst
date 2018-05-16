@@ -1,7 +1,7 @@
-.. _Telematics:
+.. _UseCase-Telematics:
 
-Telematics
-============
+Use Case Telematics
+===================
 
 Telematics gathers telemetry from the cars and stores them in the data center so
 applications can harvest valuable information from the data.
@@ -33,7 +33,7 @@ The system needs to be able to keep data in specific geos according to different
 and regulations on where the data was collected. Aggregation between the data centers
 is important but keeping the data in specific data centers is important as well.
 
-.. image:: Car moving between DC.png
+.. image:: Car-Moving-Between-DC.png
 
 .. toctree::
    :glob:

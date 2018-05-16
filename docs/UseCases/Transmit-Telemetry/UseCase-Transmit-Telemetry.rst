@@ -1,7 +1,7 @@
-.. _Transmit-Telemetry:
+.. _UseCase-Transmit-Telemetry:
 
-Transmit-Telemetry
-============
+Use Case Transmit Telemetry
+===========================
 
 Transmit Telemetry is a use case that allows the Automobile to transmit data to the Data Center.
 

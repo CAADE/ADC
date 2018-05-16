@@ -1,7 +1,7 @@
-.. _Register-Car:
+.. _UseCase-Register-Car:
 
-Register-Car
-============
+Use Case Register Car
+=====================
 
 Register Car allos the Automobile to register a car with the Data Center.
 
