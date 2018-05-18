@@ -22,7 +22,7 @@ Users
 Uses
 ----
 
-* :ref:`Cloud-Stack/Data-Lake`
+* :ref:`SubSystem-Data-Lake`
 
 Interface
 ---------

@@ -22,7 +22,7 @@ Users
 Uses
 ----
 
-* :ref:`Service-Stack/Connection-Services/API-Gateways`
+* :ref:`SubSystem-API-Gateways`
 
 Interface
 ---------

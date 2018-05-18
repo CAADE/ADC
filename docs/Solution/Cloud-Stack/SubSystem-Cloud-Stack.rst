@@ -5,8 +5,7 @@ Cloud Stack
 
 Cloud Stack is a subsystem of Automotive Data Center connects multiple data centers and public cloud
 together. This abstracts the hardware away from the application and service layer. The Cloud
-Stack utilizes the `C3 Architecture <http://c3.readthedocs.io>`_ and the
-`Cloudlet Architecture <http://cloudlet.readthedocs.io>`_ to give a federated hybrid cloud
+Stack utilizes the :ref:`SubSystem-Common-Cloud-Core` and the :ref:`SubSystem-Cloudlet` to give a federated hybrid cloud
 layer for the Applications in the Data Center.
 
 Use Cases

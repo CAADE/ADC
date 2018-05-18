@@ -22,7 +22,7 @@ Users
 Uses
 ----
 
-* :ref:`Service-Stack/Connection-Services`
+* :ref:`SubSystem-Connection-Services`
 
 Interface
 ---------

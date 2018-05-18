@@ -5,14 +5,14 @@ Automotive Data Center Overview
    :maxdepth: 2
    :caption: Users
 
-   Actor/index
+   Actors/index
 
 
 .. toctree::
    :maxdepth: 2
    :caption: High Level Use Cases
 
-   UseCase/index
+   UseCases/index
 
 
 .. image:: UseCases/UseCases.png

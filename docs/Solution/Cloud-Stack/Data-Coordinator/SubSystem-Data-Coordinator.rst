@@ -34,7 +34,7 @@ Users
 Uses
 ----
 
-* :ref:`Cloud-Stack/Data-Coordinator`
+* :ref:`SubSystem-Data-Coordinator`
 
 Interface
 ---------

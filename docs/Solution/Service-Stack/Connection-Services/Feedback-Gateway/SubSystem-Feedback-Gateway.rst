@@ -25,7 +25,7 @@ Users
 Uses
 ----
 
-* :ref:`Service-Stack/Connection-Services/Feedback-Gateway`
+* :ref:`SubSystem-Feedback-Gateway`
 
 Interface
 ---------

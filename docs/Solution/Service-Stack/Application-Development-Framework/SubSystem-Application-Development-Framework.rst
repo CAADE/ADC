@@ -28,7 +28,7 @@ Users
 Uses
 ----
 
-* :ref:`Service-Stack/Application-Development-Framework`
+* :ref:`SubSystem-Application-Development-Framework`
 
 Interface
 ---------

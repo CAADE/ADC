@@ -25,7 +25,7 @@ Users
 Uses
 ----
 
-* :ref:`Service-Stack/Connected-Car-Cloud`
+* :ref:`SubSystem-Connected-Car-Cloud`
 
 Interface
 ---------

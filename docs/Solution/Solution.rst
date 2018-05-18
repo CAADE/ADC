@@ -5,8 +5,8 @@ The Automotive Data Center is developed to handle new and existing use cases of 
 industry include but not limited to Autonomous Driving (ADAS), Telemetry, Alert Systems, and
 new usage models that have not been yet developed to monetize data.
 
-:ref:`Actors-index`
--------------------
+Actors
+------
 
 .. toctree::
     :glob:
@@ -20,7 +20,7 @@ High level Use Cases
     :glob:
     :maxdepth: 1
 
-    /UseCase/index
+    /UseCases/index
 
 .. image:: /UseCases/UseCases.png
 

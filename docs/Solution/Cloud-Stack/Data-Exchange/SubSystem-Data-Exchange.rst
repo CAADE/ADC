@@ -28,7 +28,7 @@ Users
 Uses
 ----
 
-* :ref:`Cloud-Stack/Data-Exchange`
+* :ref:`SubSystem-Data-Exchange`
 
 Interface
 ---------

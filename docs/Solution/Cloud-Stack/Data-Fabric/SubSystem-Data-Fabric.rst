@@ -22,7 +22,7 @@ Users
 Uses
 ----
 
-* :ref:`Cloud-Stack/Data-Fabric`
+* :ref:`SubSystem-Data-Fabric`
 
 Interface
 ---------
