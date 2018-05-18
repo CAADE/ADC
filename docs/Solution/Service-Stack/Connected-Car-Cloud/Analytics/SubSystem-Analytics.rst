@@ -1,7 +1,7 @@
 .. _SubSystem-Analytics:
 
-SubSystem Analytics
-===================
+Analytics
+=========
 
 Analytics is a subsystem of Cloud Connected Car of the Automotive Data Center.
 Analytics will clean and link the data.

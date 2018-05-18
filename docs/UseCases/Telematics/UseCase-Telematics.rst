@@ -1,7 +1,7 @@
 .. _UseCase-Telematics:
 
-Use Case Telematics
-===================
+Telematics
+==========
 
 Telematics gathers telemetry from the cars and stores them in the data center so
 applications can harvest valuable information from the data.

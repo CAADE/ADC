@@ -1,7 +1,7 @@
 .. _SubSystem-Data-Coordinator:
 
-SubSystem Cloud Stack::Data Coordinator
-=======================================
+Data Coordinator
+================
 
 Data Coordinator is a subsystem of ADC and is responsible for coordinating data between
 the data centers. This is for Data that can be moved between data centers based on policies

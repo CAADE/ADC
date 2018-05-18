@@ -1,7 +1,7 @@
-.. _Service-Stack/Connected-Car-Cloud:
+.. _SubSystem-Connected-Car-Cloud:
 
-SubSystem Connected Car Cloud
-=============================
+Connected Car Cloud
+===================
 
 Cloud Connected Car is a subsystem of the Service Stack in the Automotive Data Center.
 The Cloud Connected Car is contains services that connect the car to the Data Center,
@@ -37,11 +37,11 @@ Interface
 Logical Artifacts
 -----------------
 
-* :ref:`SubSystem-AI-Framework`
-* :ref:`SubSystem-Analytics`
-* :ref:`SubSystem-Annotation-Engine`
-* :ref:`SubSystem-Ingestion-Engine`
-* :ref:`SubSystem-Streaming-Engine`
+.. toctree::
+    :glob:
+    :maxdepth: 1
+
+    */SubSystem*
 
 .. image:: Logical.png
 

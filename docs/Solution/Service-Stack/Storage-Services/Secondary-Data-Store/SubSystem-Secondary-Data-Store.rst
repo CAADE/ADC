@@ -1,7 +1,7 @@
 .. _SubSystem-Secondary-Data-Store:
 
-SubSystem Secondary Data Store
-==============================
+Secondary Data Store
+====================
 
 Secondary Data Store is a subsystem of Storage Services of the Automotive Data Center.
 Secondary Data Store is used for the API Gateway and contains Derived data from analytics

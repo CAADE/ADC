@@ -1,7 +1,7 @@
 .. _SubSystem-API-Gateways:
 
-SubSystem API Gateways
-======================
+API Gateways
+============
 
 Service-Stack/Connection-Services/API-Gateways is a subsystem of adc ...
 

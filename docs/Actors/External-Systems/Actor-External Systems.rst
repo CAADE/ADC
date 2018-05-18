@@ -1,7 +1,7 @@
-.. _External-Systems:
+.. _Actor-External-Systems:
 
-Actor External-Systems
-=========================
+External Systems
+================
 
 Use Cases
 ---------

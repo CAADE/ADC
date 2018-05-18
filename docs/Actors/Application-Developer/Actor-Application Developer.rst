@@ -1,7 +1,7 @@
-.. _Application-Developer:
+.. _Actor-Application-Developer:
 
-Actor Application Developer
-===========================
+Application Developer
+=====================
 
 Application Developers develop new applications in the Automotive Data Center. They will
 use the Application Development Framework to register new applications that may include

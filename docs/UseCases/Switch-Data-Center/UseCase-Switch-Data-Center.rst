@@ -1,7 +1,7 @@
 .. _UseCase-Switch-Data-Center:
 
-UseCase Switch Data Center
-==========================
+Switch Data Center
+==================
 
 Switch Data Center is a use case that allows the Automobile to switch which data center it
 is communicating.

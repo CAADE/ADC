@@ -1,18 +1,18 @@
-Automotive Data Center
-======================
+Automotive Data Center Solution
+===============================
 
 The Automotive Data Center is developed to handle new and existing use cases of the automotive
 industry include but not limited to Autonomous Driving (ADAS), Telemetry, Alert Systems, and
 new usage models that have not been yet developed to monetize data.
 
-Actors
-------
+:ref:`Actors-index`
+-------------------
 
 .. toctree::
     :glob:
     :maxdepth: 1
 
-    /Actor/index
+    /**/Actor*
 
 High level Use Cases
 --------------------
@@ -22,7 +22,7 @@ High level Use Cases
 
     /UseCase/index
 
-.. image:: /UseCase/UseCases.png
+.. image:: /UseCases/UseCases.png
 
 High Level Overview
 -------------------
@@ -37,8 +37,9 @@ High Level Overview
 * :ref:`SubSystem-Analytics`, :ref:`SubSystem-AI-Framework`
 * :ref:`SubSystem-Connection-Services` to External Applications and data sources
 
-:ref: `SubSystem-Cloud-Stack`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:ref:`SubSystem-Cloud-Stack`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Cloudlet (Multi-cloud) connectivity
 * Hybrid Cloud for connectivity between private and public Clouds.

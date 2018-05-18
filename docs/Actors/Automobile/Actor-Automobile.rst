@@ -1,7 +1,7 @@
-.. _Automobile:
+.. _Actor-Automobile:
 
-Actor Automobile
-================
+Automobile
+==========
 
 This is a automobile that has been registered to a Automotive Data Center. It will send
 telemetry from the car to the ADC every minute. The size of the telemetry package can
@@ -13,7 +13,7 @@ Use Cases
 * :ref:`UseCase-Register-Car`
 * :ref:`UseCase-Deregister-Car`
 * :ref:`UseCase-Switch-Data-Center`
-* :ref:`Transmit Telemetry`
+* :ref:`UseCase-Transmit-Telemetry`
 
 .. image:: UseCases.png
 

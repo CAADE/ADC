@@ -1,7 +1,7 @@
 .. _UseCase-Report-Accident:
 
-UseCase Report Accident
-=======================
+Report Accident
+===============
 
 Report and Accident is a use case that allows the Automobile to report an accident to the
 Data Center.

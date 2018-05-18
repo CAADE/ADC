@@ -1,7 +1,7 @@
 .. _SubSystem-Ingestion-Engine:
 
-SubSystem Ingestion Engine
-==========================
+Ingestion Engine
+================
 
 Ingestion Engine is a subsystem of Connected Car Cloud of the Automotive Data Center.
 Ingestion Engine is how data comes into the Data Center from the Car. The Ingestion Engine

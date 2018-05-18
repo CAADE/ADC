@@ -1,7 +1,7 @@
 .. _UseCase-Manage-Cloudlets:
 
-Use Case Manage Cloudlets
-=========================
+Manage Cloudlets
+================
 
 Manage Cloudlets allows the Operations Manager to connect multiple Data Centers together.
 

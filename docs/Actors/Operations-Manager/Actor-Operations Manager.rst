@@ -1,7 +1,7 @@
-.. _Operations-Manager:
+.. _Actor-Operations-Manager:
 
-Actor Operations-Manager
-========================
+Operations Manager
+==================
 
 The Operations Manager manages the Infrastructure and monitors the services and applications.
 The `Common Cloud Core <http://c3.readthedocs.io>`_ architecture has a extended

@@ -1,7 +1,7 @@
 .. _SubSystem-Service-Stack:
 
-SubSystem Service Stack
-=======================
+Service Stack
+=============
 
 Service Stack is a subsystem of Automotive Data Center.
 It contains the services for the Automotive Data Center that provides frameworks to develope new
@@ -38,10 +38,11 @@ Interface
 Logical Artifacts
 -----------------
 
-* :ref:`SubSystem-Application-Developer-Framework`
-* :ref:`SubSystem-Cloud-Connected-Car`
-* :ref:`SubSystem-Connection-Services`
-* :ref:`SubSystem-Storage-Service`
+.. toctree::
+    :glob:
+    :maxdepth: 1
+
+    */SubSystem*
 
 .. image:: Logical.png
 

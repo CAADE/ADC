@@ -1,7 +1,8 @@
-.. _Alert-Systems:
+.. _Actor-Alert-Systems:
 
-Actor Alert-Systems
-=========================
+Alert Systems
+=============
+
 Alert Systems are systems that include emergency response vehicles or any system that is alerted
 when vehicles undergo some kind of event, typically dramatic event like and accident.
 The goal is to have an emergency vehicle respond to the accident in less than 7 minutes from
@@ -10,6 +11,7 @@ response vehicle.
 
 Use Cases
 ---------
+
 * :ref:`UseCase-Report-Accident`
 * :ref:`UseCase-Alert-Emergency Vehicle`
 

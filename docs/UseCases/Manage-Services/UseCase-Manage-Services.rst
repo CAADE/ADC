@@ -1,7 +1,7 @@
 .. _UseCase-Manage-Services:
 
-Use Case Manage Services
-========================
+Manage Services
+===============
 
 Manage Services is a use case that allows the Stack Developer and Operations Manager manage
 services in the Data Center.

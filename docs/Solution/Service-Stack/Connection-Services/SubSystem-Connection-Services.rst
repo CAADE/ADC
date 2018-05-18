@@ -1,9 +1,9 @@
-.. _Service-Stack/Connection-Services:
+.. _SubSystem-Connection-Services:
 
-Service-Stack/Connection-Services
-============
+Connection Services
+===================
 
-Service-Stack/Connection-Services is a subsystem of adc ...
+Connection Services is a subsystem of the Service Stack in the ADC Architecture.
 
 Use Cases
 ---------
@@ -34,10 +34,11 @@ Interface
 Logical Artifacts
 -----------------
 
-* :ref:`SubSystem-API-Gateways`
-* :ref:`SubSystem-Feedback-Gateway`
-* :ref:`SubSystem-Notification-Gateway`
+.. toctree::
+    :glob:
+    :maxdepth: 1
 
+    */SubSystem*
 
 .. image:: Logical.png
 

@@ -1,7 +1,7 @@
 .. _SubSystem-Primary-Data-Store:
 
-SubSystem-Primary-Data-Store
-============================
+Primary Data Store
+==================
 
 Primary Data Store is a subsystem of Storage Services of the Automotive Data Center.
 The Primary Data Store is used for the API Gateway, Notification Gateway and AI Framework.

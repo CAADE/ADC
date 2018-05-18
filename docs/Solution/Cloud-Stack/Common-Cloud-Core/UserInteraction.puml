@@ -1,0 +1,6 @@
+@startuml
+actor User
+
+User -> "Cloud-Stack/Common-Cloud-Core": UseCase
+
+@enduml

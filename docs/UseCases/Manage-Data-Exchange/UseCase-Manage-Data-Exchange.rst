@@ -1,7 +1,8 @@
 .. _UseCase-Manage-Data-Exchange:
 
-Use Case Manage Data Exchange
-=============================
+Manage Data Exchange
+====================
+
 Manage Data Exchange is a use case that gives the Operations Manager the ability to
 configure and set up the Data Exchange SubSystem.
 

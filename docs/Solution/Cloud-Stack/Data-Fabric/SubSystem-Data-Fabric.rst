@@ -1,9 +1,9 @@
-.. _Cloud-Stack/Data-Fabric:
+.. _SubSystem-Data-Fabric:
 
-Cloud-Stack/Data-Fabric
-============
+Data Fabric
+===========
 
-Cloud-Stack/Data-Fabric is a subsystem of adc ...
+Data Fabric is a subsystem of Cloud Stack in the ADC architecture.
 
 Use Cases
 ---------

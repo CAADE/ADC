@@ -1,0 +1,18 @@
+@startuml
+
+partition "Cloud-Stack/Cloudlet" {
+
+}
+
+partition SubSystem  #cccccc {
+  (*) --> "Create Project"
+  --> "Write Code"
+}
+
+partition "Cloud-Stack/Cloudlet" {
+  "Write Code" --> "Test Code"
+  "Test Code" --> "Deploy Code"
+  "Deploy Code" --> (*)
+}
+
+@enduml

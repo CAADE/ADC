@@ -1,7 +1,7 @@
 .. _UseCase-In-Vehicle-Infomatics:
 
-Use Case In Vehicle Infomatics
-==============================
+In Vehicle Infomatics
+=====================
 
 In Vehicle Infomatics is a Use Model of the Automotive Data Center.
 

@@ -1,11 +1,10 @@
 .. _SubSystem-AI-Framework:
 
-SubSystem AI Framework
-======================
+AI Framework
+============
 
 Artificial Intelligence Framework is a subsystem of Service Stack of the Automotive Data Center.
 The AI Framework allows applications to "Learn" from data in the data center.
-
 
 Use Cases
 ---------

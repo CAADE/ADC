@@ -1,0 +1,14 @@
+@startuml
+
+package "Cloud-Stack/Common-Cloud-Core" {
+    interface "Cloud-Stack/Common-Cloud-Core" {
+
+    }
+    CLI ()-- "Cloud-Stack/Common-Cloud-Core"
+    REST ()-- "Cloud-Stack/Common-Cloud-Core"
+    Web ()-- "Cloud-Stack/Common-Cloud-Core"
+
+}
+
+
+@enduml

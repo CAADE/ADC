@@ -47,12 +47,11 @@ Interface
 Logical Artifacts
 -----------------
 
-* `Cloudlet <http://cloudlet.readthedocs.io>`_
-* `Common Cloud Core <http://c3.readthedocs.io>`_
-* :ref:`SubSystem-Data-Coordinator`
-* :ref:`SubSystem-Data-Fabric`
-* :ref:`SubSystem-DataExchange`
-* :ref:`SubSystem-Data-Lake`
+.. toctree::
+    :glob:
+    :maxdepth: 1
+
+    */SubSystem*
 
 .. image:: Logical.png
 

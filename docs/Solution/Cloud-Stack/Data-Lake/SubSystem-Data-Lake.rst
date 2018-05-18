@@ -1,7 +1,7 @@
-.. _Cloud-Stack/Data-Lake:
+.. _SubSystem-Data-Lake:
 
-Cloud-Stack/Data-Lake
-============
+Data Lake
+=========
 
 Cloud-Stack/Data-Lake is a subsystem of adc ...
 

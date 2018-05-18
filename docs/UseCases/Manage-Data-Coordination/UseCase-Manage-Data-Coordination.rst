@@ -1,7 +1,8 @@
 .. _UseCase-Manage-Data-Coordination:
 
-Use Case Manage Data Coordination
-=================================
+Manage Data Coordination
+========================
+
 Manage Data Coordination allows the Operations Manager to connect multiple Data Centers
 together and gives them the ability to move data between the Data Centers based on
 Policies.

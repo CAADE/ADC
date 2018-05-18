@@ -1,7 +1,7 @@
 .. _SubSystem-Notification-Gateway:
 
-SubSystem Notification Gateway
-==============================
+Notification Gateway
+====================
 
 Notification Gateway is a subsystem of Connection Services of the Automotive Data Center.
 The Notification Gateway connects external Systems that are "Notified" when specific events

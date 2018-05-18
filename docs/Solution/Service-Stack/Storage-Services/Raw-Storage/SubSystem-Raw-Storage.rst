@@ -1,7 +1,7 @@
 .. _SubSystem-Raw-Storage:
 
-SubSystem-Raw-Storage
-=====================
+Raw Storage
+===========
 
 Raw Storage is a subsystem of Storage Services of the Automotive Data Center.
 The Raw Storage stores the raw data coming in from the cars. The data is a replica of the

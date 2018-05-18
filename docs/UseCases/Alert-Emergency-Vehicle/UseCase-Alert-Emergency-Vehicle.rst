@@ -1,7 +1,7 @@
 .. _UseCase-Alert-Emergency-Vehicle:
 
-SubSytem Alert Emergency Vehicle
-================================
+Alert Emergency Vehicle
+=======================
 
 The Alert Emergency Vehicle Use Case is part of the Alert System and alerts emergency
 vehicles that are close to an accident.

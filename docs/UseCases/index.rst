@@ -1,11 +1,11 @@
-adc Use Cases
-=========================
+Use Cases
+=========
 
 .. toctree::
     :glob:
     :maxdepth: 1
 
-    */UseCase*
+    **/UseCase*
 
 
 .. image:: UseCases.png

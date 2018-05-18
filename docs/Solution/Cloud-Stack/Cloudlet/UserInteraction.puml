@@ -1,0 +1,6 @@
+@startuml
+actor User
+
+User -> "Cloud-Stack/Cloudlet": UseCase
+
+@enduml

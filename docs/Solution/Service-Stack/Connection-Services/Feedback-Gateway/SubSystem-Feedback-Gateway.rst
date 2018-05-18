@@ -1,7 +1,7 @@
 .. _SubSystem-Feedback-Gateway:
 
-SubSystem Feedback Gateway
-==========================
+Feedback Gateway
+================
 
 Feedback Gateway is a subsystem of Connection Services of the Automotive Data Center.
 The Feedback Gateway connects the Data Center back to the car that messages originally

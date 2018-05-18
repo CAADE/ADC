@@ -1,7 +1,7 @@
 .. _SubSystem-Annotation-Engine:
 
-SubSystem Annotation Engine
-===========================
+Annotation Engine
+=================
 
 Annotation Engine is a subsystem of Connected Car Cloud of the Automotive Data Center.
 The Annotation Engine adds meta-data to the data streamed into the Data Center from the

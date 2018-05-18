@@ -1,7 +1,7 @@
 .. _UseCase-ADAS:
 
-Use Case ADAS
-=============
+ADAS
+====
 
 ADAS is one of the Use Cases of the Automotive Data Center. It is used to help train
 the automous driving vehicles. It uses the Services Stack Services to accomplish all of its

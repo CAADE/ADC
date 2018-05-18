@@ -1,7 +1,8 @@
 .. _UseCase-Manage-Policies:
 
-Use Case Manage Policies
-========================
+Manage Policies
+===============
+
 Manage Policies is a Use Case that allows the Operations Manager to manage policies in several
 parts of the Architecture.
 

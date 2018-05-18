@@ -1,14 +1,11 @@
 .. _SubSystem-Hardware-Stack:
 
-SubSystem Hardware Stack
-========================
+Hardware Stack
+==============
 
 Hardware Stack is a subsystem of Automotive Data Center and includes the definition of
 a small set of rack configurations, switch and storage for the applications running
 in the data center.
-
-
-Hardware-Stack is a subsystem of adc ...
 
 Use Cases
 ---------

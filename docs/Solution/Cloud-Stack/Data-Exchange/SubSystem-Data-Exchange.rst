@@ -1,7 +1,8 @@
 .. _SubSystem-Data-Exchange:
 
-SubSystem Cloud Stack::Data Exchange
-====================================
+Data Exchange
+=============
+
 Data Exchange is a subsystem of Cloud Stack of the Automotive Data Center.
 The Data Exchange gives the ability to establish policies per locations/Data Center that
 limits the data that can be accessed by a authenticated user. Data does not move to the

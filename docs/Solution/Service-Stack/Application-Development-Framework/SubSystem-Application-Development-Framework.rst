@@ -1,7 +1,7 @@
 .. _SubSystem-Application-Development-Framework:
 
-SubSystem Application Development Framework
-===========================================
+Application Development Framework
+=================================
 
 Application Development Framework is a subsystem of Service Stack of the Automotive Data Center.
 The framework gives the Application Developer the ability to develop new services and applications

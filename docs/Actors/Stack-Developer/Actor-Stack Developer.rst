@@ -1,7 +1,7 @@
-.. _Stack-Developer:
+.. _Actor-Stack-Developer:
 
-Actor Stack-Developer
-=========================
+Stack Developer
+===============
 
 The Stack Developer developers reuseable services and stacks of services that are used by
 the Application Developers. They can also be Services that can be used by External systems

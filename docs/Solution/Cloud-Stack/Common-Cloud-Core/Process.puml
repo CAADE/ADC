@@ -1,0 +1,18 @@
+@startuml
+
+partition "Cloud-Stack/Common-Cloud-Core" {
+
+}
+
+partition SubSystem  #cccccc {
+  (*) --> "Create Project"
+  --> "Write Code"
+}
+
+partition "Cloud-Stack/Common-Cloud-Core" {
+  "Write Code" --> "Test Code"
+  "Test Code" --> "Deploy Code"
+  "Deploy Code" --> (*)
+}
+
+@enduml

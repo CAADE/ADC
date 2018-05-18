@@ -1,7 +1,7 @@
 .. _UseCase-Manage-Applications:
 
-Use Csae Manage Applications
-============================
+Manage Applications
+===================
 
 Manage applications allows the Operations Manager to connect multiple Data Centers together.
 
