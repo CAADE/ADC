@@ -32,7 +32,7 @@ High Level Overview
 :ref:`SubSystem-Service-Stack`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* :ref:`SubSystem-Cloud-Connected-Car` - (Ingestion, Annotation, Streaming, Data Storage)
+* :ref:`SubSystem-Connected-Car-Cloud` - (Ingestion, Annotation, Streaming, Data Storage)
 * Specialized Applications (ADAS, Telematics, IVI, Dynamic Mapping)
 * :ref:`SubSystem-Analytics`, :ref:`SubSystem-AI-Framework`
 * :ref:`SubSystem-Connection-Services` to External Applications and data sources

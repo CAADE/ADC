@@ -23,7 +23,7 @@ Users
 Uses
 ----
 
-* :ref:`Service-Stack/Connected-Car-Cloud/AI-Framework`
+* :ref:`SubSytem-AI-Framework`
 
 Interface
 ---------

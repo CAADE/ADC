@@ -22,7 +22,7 @@ Users
 -----
 
 * :ref:`Actor-User`
-* :ref:`Actor-Operation-Manager`
+* :ref:`Actor-Operations-Manager`
 
 The Operations Manager uses the `Common Cloud Core <http://c3.readthedocs.io>`_C3/wiki) and the
 `Cloudlet <http://cloudlet.readthedocs.io>`_ architectures to build a base of

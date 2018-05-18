@@ -13,7 +13,7 @@ Use Cases
 ---------
 
 * :ref:`UseCase-Report-Accident`
-* :ref:`UseCase-Alert-Emergency Vehicle`
+* :ref:`UseCase-Alert-Emergency-Vehicle`
 
 .. image:: UseCases.png
 
@@ -57,6 +57,6 @@ Command Line Interface
 
 **De-Register an Alert system from the Automotive Data Center**
 
-.. code-block:: node
+.. code-block:: none
 
     # adc alertSystem deregister <url>
