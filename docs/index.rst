@@ -6,6 +6,6 @@ Automotive Data Center
 
    Home
    Solution/index
-   Actor/index
-   UseCase/index
+   Actors/index
+   UseCases/index
 

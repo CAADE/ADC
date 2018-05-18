@@ -1,7 +1,7 @@
 .. _SubSystem-Cloud-Stack:
 
-SubSystem Cloud Stack
-=====================
+Cloud Stack
+===========
 
 Cloud Stack is a subsystem of Automotive Data Center connects multiple data centers and public cloud
 together. This abstracts the hardware away from the application and service layer. The Cloud
