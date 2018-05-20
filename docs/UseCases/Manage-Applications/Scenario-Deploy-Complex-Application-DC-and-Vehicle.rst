@@ -12,7 +12,7 @@ the diagram shows one for simplicity.
 
 An application definition has information about the application and possible location of where to place the services
 that make up the application. Ultimately the decision on where to place the services of the application is the
-responsibility of the :ref:`SubSystem-Common-Cloud-Core`_.
+responsibility of the :ref:`SubSystem-Common-Cloud-Core`.
 
 .. image:: Deploy-Complex-Application-DC-and-Vehicle.png
 

@@ -10,7 +10,7 @@ the diagram shows one for simplicity.
 .. image:: Complex-Application-DC-Edge.png
 
 When an application is created it will provision an overlay network (or something similar) and services in the
-data center and an edge dependent on policies of the :ref:`Common Cloud Core`_. After the application has been
+data center and an edge dependent on policies of the :ref:`Common Cloud Core`. After the application has been
 created it can function by moving data through the created network from Vehicle -> Edge -> Data Center.
 
 .. image:: Deploy-Complex-Application-DC-and-Edge.png
