@@ -1,12 +1,17 @@
 @startuml
 
 
-partition "OperationManager"  #cccccc {
-  (*) --> "Start Here"
+partition "Operations Manager"  #cccccc {
+  (*) --> "Registered Admin"
 }
 
-partition "system.name" #ffaaaa {
-  "Start Here" --> "Here"
+partition "ADC" #aaffaa {
+  "Registered Admin" --> "Manage Infrastructure"
+  "Registered Admin" --> "Manage Applications"
+  "Registered Admin" --> "Manage External Connections"
+  "Registered Admin" --> "Manage Policies"
+  "Registered Admin" --> "Manage Data Coordination"
+  "Registered Admin" --> "Manage Services"
 }
 
 @enduml

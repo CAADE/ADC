@@ -1,0 +1,14 @@
+@startuml
+
+package "Security-Aspect" {
+    interface "Security-Aspect" {
+
+    }
+    CLI ()-- "Security-Aspect"
+    REST ()-- "Security-Aspect"
+    Web ()-- "Security-Aspect"
+
+}
+
+
+@enduml

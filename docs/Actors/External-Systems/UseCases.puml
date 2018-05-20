@@ -2,12 +2,21 @@
 
 left to right direction
 
-:External-Systems: as Actor
+:External-Systems: as system
+:Operations-Manager: as ops
 
-rectangle "system.name" {
-    (Use Case) as U1
+rectangle "ADC" {
+    (Register External System) as U1
+    (DeRegister External System) as U2
+    (Notify of Changes) as U3
+    (Manage External Connections) as U4
 }
 
-Actor --> U1
+system -> U1
+system -> U2
+U3 -> system
+ops -> U4
+U4 --> U2
+U4 --> U1
 
 @enduml

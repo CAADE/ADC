@@ -1,20 +1,11 @@
 @startuml
-|Stack-Developer|
+|Stack Developer|
 start
-|#ffffaa|system.name|
+|#aaffaa|ADC|
 fork
-:Create Application Stack;
-:Modify Application Stack;
-:Version Application Stack;
+:Manage Application Stacks;
 fork again
-:Create Service Stack;
-:Modify Service Stack;
-:Version Service Stack;
+:Manage Services;
 fork end
-|#aaffff|Application Manager|
-:Test Application Stack;
-:Create an Application;
-:Launch an Application in an environment;
-:Kill Application and Services;
 stop
 @enduml

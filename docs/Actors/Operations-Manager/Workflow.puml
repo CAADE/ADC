@@ -1,20 +1,19 @@
 @startuml
-|OperationManager|
+|Operation Manager|
 start
-|#ffffaa|system.name|
+|#aaffaa|system.name|
 fork
-:Create Application Stack;
-:Modify Application Stack;
-:Version Application Stack;
+:Manage Infrastructure;
 fork again
-:Create Service Stack;
-:Modify Service Stack;
-:Version Service Stack;
+:Manage Applications;
+fork again
+:Manage External Connections;
+fork again
+:Manage Policies;
+fork again
+:Manage Data Coordination;
+fork again
+:Manage Services;
 fork end
-|#aaffff|Application Manager|
-:Test Application Stack;
-:Create an Application;
-:Launch an Application in an environment;
-:Kill Application and Services;
 stop
 @enduml

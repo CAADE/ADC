@@ -2,12 +2,22 @@
 
 left to right direction
 
-:OperationManager: as Actor
+:Operation Manager: as ops
 
-rectangle "system.name" {
-    (Use Case) as U1
+rectangle "ADC" {
+    (Manage Infrastructure) as MI
+    (Manage Applications) as MA
+    (Manage External Connections) as MEC
+    (Manage Policies) as MP
+    (Manage Data Coordination) as MDC
+    (Manage Services) as MS
 }
 
-Actor --> U1
+ops --> MI
+ops --> MA
+ops --> MEC
+ops --> MP
+ops --> MDC
+ops --> MS
 
 @enduml

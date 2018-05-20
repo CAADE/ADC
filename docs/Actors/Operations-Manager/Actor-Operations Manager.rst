@@ -12,6 +12,12 @@ Use Cases
 ---------
 
 * :ref:`UseCase-Manage-Infrastructure`
+* :ref:`UseCase-Manage Infrastructure`
+* :ref:`UseCase-Manage Applications`
+* :ref:`UseCase-Manage External Connections`
+* :ref:`UseCase-Manage Policies`
+* :ref:`UseCase-Manage Data Coordination`
+* :ref:`UseCase-Manage Services`
 
 .. image:: UseCases.png
 
@@ -37,5 +43,5 @@ TBD
 Command Line Interface
 ----------------------
 
-![Image](https://github.com/CAADE/C3/wiki/Actors/OperationsManager/Workflow.png)
+See `C3 commandline interface <http://c3.readthedocs.io/en/latest/Actors/OperationsManager/Actor-OperationsManager.html>`_.
 

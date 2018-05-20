@@ -1,0 +1,30 @@
+@startuml
+
+
+partition "Hybrid Cloud (C3)"  #88aaff {
+  (*) --> "Deploy Application"
+  "Deploy Application" --> "Evaluate Policies"
+  "Evaluate Policies" --> "Determine Targets"
+  "Determine Targets" --> "Deploy Services"
+  "Determine Targets" --> "Establish Security"
+  "Determine Targets" --> "Establish Connections"
+}
+
+partition "Data Center"  #ffaa88 {
+    "Deploy Services" --> "Deploy Data Service"
+    "Establish Security" --> "Setup Creds"
+    "Establish Connections" --> "Setup Network"
+
+}
+partition "Edge"  #aaff88 {
+    "Deploy Services" --> "Deploy Data Service "
+    "Establish Security" --> "Setup Creds "
+    "Establish Connections" --> "Setup Network "
+}
+partition "In Vehicle"  #ffffaa {
+    "Deploy Services" --> " Deploy Data Service "
+    "Establish Security" --> " Setup Creds "
+    "Establish Connections" --> " Setup Network "
+}
+
+@enduml

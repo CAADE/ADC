@@ -1,0 +1,30 @@
+@startuml
+Actor "Application Developer" as dev
+
+box "Manage Application" #lightblue
+participant "adc" as S
+participant "DC Ingress" as Ingress
+participant "Edge" as Edge
+participant "Vehicle" as Car
+dev -> S : Deploy Application(appDef) : AppID
+S -> Car : createApplication(appDef)
+create "Network" as net #ffaa88
+Car -> net : create(appDef.network)
+create "Application" as app #ffaa88
+Car -> app : create(appDef.app)
+create "Redis" as redis #ffaa88
+app -> redis : create(appDef.service[0])
+create "WebService" as web #ffaa88
+app -> web: create(appDef.service[1])
+create "NodeJS" as node #ffaa88
+app -> node: create(appDef.service[2])
+create "Worker" as worker #ffaa88
+app -> worker: create(appDef.service[3])
+
+app -> Car : update(data)
+Car -> Edge : transmit(data)
+Edge -> Ingress : transmit(data) : newData
+
+end box
+
+@enduml

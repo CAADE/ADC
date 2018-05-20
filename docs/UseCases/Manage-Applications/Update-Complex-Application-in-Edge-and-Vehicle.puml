@@ -1,0 +1,9 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Applications" #lightblue
+participant "adc" as S
+A -> S : Update-Complex-Application-in-Edge-and-Vehicle
+end box
+
+@enduml

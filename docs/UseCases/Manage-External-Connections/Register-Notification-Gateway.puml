@@ -1,0 +1,9 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-External-Connections" #lightblue
+participant "adc" as S
+A -> S : Register-Notification-Gateway
+end box
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+Actor "External System" as A
+
+box "Manage External Connections" #lightblue
+participant "ADC" as S
+A -> S : DeRegister External System(url, type)
+alt type=api
+  S -> "External Manager": Deregister External from API Gateway(url)
+  "External Manager" -> "API Gateway" : Deregister(url)
+else type=exchange
+  S -> "External Manager": Deregister External to Data Exchange(url)
+  "External Manager" -> "Data Exchange": Deregister(url)
+else type=notify
+  S -> "External Manager": Deregister External from Notification Gateway(url)
+  "External Manager" -> "Notification Gateway": flush()
+  "External Manager" -> "Notification Gateway": Deregister(url)
+end
+end box
+
+@enduml
+

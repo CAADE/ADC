@@ -2,11 +2,12 @@
 
 
 partition "Stack-Developer"  #cccccc {
-  (*) --> "Start Here"
+  (*) --> "Registered Developer"
 }
 
-partition "system.name" #ffaaaa {
-  "Start Here" --> "Here"
+partition "system.name" #aaffaa {
+  "Registered Developer" --> "Manage Services"
+  "Registered Developer" --> "Manage Application Stacks"
 }
 
 @enduml

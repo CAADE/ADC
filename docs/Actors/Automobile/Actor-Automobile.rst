@@ -41,4 +41,31 @@ TBD
 Command Line Interface
 ----------------------
 
-TBD
+:ref:`UseCase-Register-Car`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: none
+
+    # adc car register --url <url>
+
+:ref:`UseCase-Deregister-Car`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: none
+
+    # adc car deregister --url <url>
+
+:ref:`UseCase-Switch-Data-Center`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: none
+
+    # adc car switch-data-center --url <url> --data-center <new data center>
+
+:ref:`UseCase-Transmit-Telemetry`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: none
+
+    # adc car transmit --url <url> --file <transmit file>
+

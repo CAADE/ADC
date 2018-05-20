@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var YAML = require('yamljs');
+
+const program = require('commander');
+const Client = require('node-rest-client').Client;
+const config = require('./config'); /* Replace this with your own config file. */
+const _ = require('lodash');
+
+let client = new Client();
+
+// BEGIN: Dynamic Mapping based on Controller Action
+const action = require('../api/controllers/car/deregister');
+program.description(action.description);
+_.each(Object.keys(action.inputs), function(key) {
+    if(key != "mode") { // Used to force json output instead of html
+        program.option('-' + key[0] + ", --" + key + " <" + action.inputs[key].type + ">", action.inputs[key].description);
+    }
+});
+// END: Dynamic Mapping based on Controller Action
+
+program.parse(process.argv);
+
+var url = config.Url + "/car/deregister?";
+
+
+/* Get the arguments passed on the command line and put them in a URL.
+if (name) {
+  url += "name=" + name[0];
+}
+if (program.stack) {
+  url += "&stack=" + program.stack;
+}
+*/
+
+client.get(url, function (data, response) {
+  // parsed response body as js object
+  if (data.error) {
+    console.error("Error:" + data.error);
+  }
+  else {
+  // Process the data returned.
+  }
+});

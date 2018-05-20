@@ -1,12 +1,26 @@
 @startuml
 
 
-partition "External-Systems"  #cccccc {
-  (*) --> "Start Here"
+partition "External Systems" #cccccc {
+  (*) ---> "Register to Data Center"
 }
 
-partition "system.name" #ffaaaa {
-  "Start Here" --> "Here"
+partition "ADC" #ffaaaa {
+  "Register to Data Center" --> "Register External System"
 }
 
+
+partition "External Systems"  {
+"Register External System" --> "Registered"
+}
+
+partition "ADC" {
+  "Registered" -> "Access API Gateway"
+  "Registered" -> "Access Data Exchange"
+  "Register External System" --> "Data Changed"
+}
+
+partition "External Systems" {
+  "Data Changed" -> "Notify Changes"
+}
 @enduml

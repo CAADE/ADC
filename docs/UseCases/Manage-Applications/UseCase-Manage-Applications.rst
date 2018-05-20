@@ -8,14 +8,17 @@ Manage applications allows the Operations Manager to connect multiple Data Cente
 Actors
 ------
 
-* _Actors_
+* :ref:`Actor-Application-Developer`
+* :ref:`Actor-Operations-Manager`
 
 Activities
 ----------
 
 .. image:: Activities.png
 
-* _Activities_
+* Deploy Applications
+* Upgrade Applications
+* :ref:`UseCase-Manage-Applications`
 
 Detail Scenarios
 ----------------
@@ -29,6 +32,9 @@ Detail Scenarios
 Systems Involved
 ----------------
 
-* _Systems_
+* Hybrid Cloud
+* Data Center Cloud
+* Edge Cloud
+* In Vehicle Cloud
 
 

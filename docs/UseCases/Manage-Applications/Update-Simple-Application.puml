@@ -1,0 +1,9 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Applications" #lightblue
+participant "adc" as S
+A -> S : Update-Simple-Application
+end box
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+
+partition "Security-Aspect" {
+
+}
+
+partition SubSystem  #cccccc {
+  (*) --> "Create Project"
+  --> "Write Code"
+}
+
+partition "Security-Aspect" {
+  "Write Code" --> "Test Code"
+  "Test Code" --> "Deploy Code"
+  "Deploy Code" --> (*)
+}
+
+@enduml

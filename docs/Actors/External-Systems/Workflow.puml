@@ -1,20 +1,38 @@
 @startuml
-|External-Systems|
+|External System|
+|#ffaa88|Notify External System|
+|External System|
 start
-|#ffffaa|system.name|
-fork
-:Create Application Stack;
-:Modify Application Stack;
-:Version Application Stack;
-fork again
-:Create Service Stack;
-:Modify Service Stack;
-:Version Service Stack;
-fork end
-|#aaffff|Application Manager|
-:Test Application Stack;
-:Create an Application;
-:Launch an Application in an environment;
-:Kill Application and Services;
-stop
+|#ffffaa|ADC|
+:register external system;
+if(connection.type) then (notification)
+  #ffaa88:register notification gateway;
+  |Notify External System|
+  repeat
+  :notify of Change;
+  :wait for Change;
+  repeat while(registered)
+  stop
+  |ADC|
+elseif (connection.type) then (data exchange)
+  #aaffff:register data exchange;
+  |#aaffff|Data Exchange External System|
+  :submit analytics job;
+  |ADC|
+  #aaffff:run analytics job in Data Centers;
+  #aaffff:return results;
+  |Data Exchange External System|
+  :compile results;
+  stop
+  |ADC|
+elseif (connection.type) then (api gateway)
+  #aaffaa:register api gateway;
+  |#aaffaa|API External System|
+  :access ADC API;
+  |ADC|
+  #aaffaa:return queried Data;
+  |API External System|
+  stop
+endif
+
 @enduml

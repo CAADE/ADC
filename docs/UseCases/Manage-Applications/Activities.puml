@@ -1,9 +1,30 @@
 @startuml
-|actorName|
+|Application Developer|
 start
 |#ffffaa|adc|
-:activity1;
-|actor2|
-:activity2;
+:deploy application;
+fork
+|#ffaa88|Data Center|
+:deploy application;
+fork again
+|#aaffaa|Edge Cloud|
+:deploy application;
+fork again
+|#aaffff|In Vehicle Cloud|
+:deploy application;
+end fork
+|adc|
+:upgrade application;
+fork
+|Data Center|
+:upgrade application;
+fork again
+|Edge Cloud|
+:upgrade application;
+fork again
+|In Vehicle Cloud|
+:upgrade application;
+end fork
+|adc|
 stop
 @enduml

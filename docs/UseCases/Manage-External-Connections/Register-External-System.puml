@@ -1,0 +1,20 @@
+@startuml
+Actor "External System" as A
+
+box "Manage External Connections" #lightblue
+participant "ADC" as S
+A -> S : Register External System(url, type, data) : uri
+alt type=api
+  S -> "External Manager": Register External to API Gateway(url): uri
+  "External Manager" -> "API Gateway" : Register(url): uri
+else type=exchange
+  S -> "External Manager": Register External to Data Exchange(url): uri
+  "External Manager" -> "Data Exchange": Register(url): uri
+else type=notify
+  S -> "External Manager": Register External to Notification Gateway(url, data.events)
+  "External Manager" -> "Notification Gateway": Register(url, data.events)
+end
+
+end box
+
+@enduml

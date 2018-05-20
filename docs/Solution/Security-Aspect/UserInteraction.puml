@@ -1,0 +1,6 @@
+@startuml
+actor User
+
+User -> "Security-Aspect": UseCase
+
+@enduml

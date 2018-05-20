@@ -6,7 +6,8 @@
     "bouquet-UseCase": "/Users/dwpulsip/work/bouquet/bouquet-UseCase",
     "bouquet-SubSystem": "/Users/dwpulsip/work/bouquet/bouquet-SubSystem",
     "bouquet-Scenario": "/Users/dwpulsip/work/bouquet/bouquet-Scenario",
-    "bouquet-uservice": "/Users/dwpulsip/work/bouquet/sails-generate-bouquet-uservice"
+    "bouquet-uservice": "/Users/dwpulsip/work/bouquet/sails-generate-bouquet-uservice",
+    "bouquet-action": "/Users/dwpulsip/work/bouquet/sails-generate-bouquet-action"
     }
   }
 }
