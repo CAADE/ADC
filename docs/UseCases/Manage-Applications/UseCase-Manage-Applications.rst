@@ -3,7 +3,8 @@
 Manage Applications
 ===================
 
-Manage applications allows the Operations Manager to connect multiple Data Centers together.
+Manage applications allows the Operations Manager to connect multiple Data Centers, Edge devices, and Vehicles together.
+Configurations of data centers, edge devices, and vehicles are very diverse and can differ orders of magnitude.
 
 Actors
 ------

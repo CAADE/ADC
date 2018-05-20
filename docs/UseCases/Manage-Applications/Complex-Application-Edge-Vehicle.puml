@@ -1,0 +1,30 @@
+@startuml
+
+package "Hybrid Cloud C3" #ffffaa {
+  component Application #ffffff
+  component OverlayNetwork
+  Application *-> OverlayNetwork
+}
+package "In Vehicle" #aaffff {
+  component Egress as IVE
+  component WorkerC #ffffff
+  WorkerC -> IVE : 3001
+}
+package "Edge" #aaffaa {
+  interface ingress as EVI
+  component Egress as EVE
+  component WorkerE #ffffff
+  EVI ->  WorkerE
+  WorkerE -> EVE : 3000
+}
+
+package "Data Center" #ffaa88{
+  interface Ingress as DCI
+  Application *..> WorkerC
+  Application *..> WorkerE
+}
+
+IVE --> EVI
+EVE --> DCI
+
+@enduml

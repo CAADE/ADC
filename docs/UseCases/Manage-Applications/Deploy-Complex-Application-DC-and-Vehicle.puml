@@ -1,9 +1,39 @@
 @startuml
-Actor "actorName" as A
+Actor "Application Developer" as dev
 
-box "Manage-Application" #lightblue
-participant "adc" as S
-A -> S : Deploy-Complex-Application-DC-and-Vehicle
+box "Data Center" #aaffff
+    participant "adc" as S
+    participant "data center" as DC
+    participant "DC Ingress" as DCI
+    dev -> S : Deploy Application(appDef) : AppID
+    S -> DC : createApplication(appDef)
+    create "Network" as net #ffaaff
+    DC -> net : create(appDef.network)
+    create "Application" as app #ffaaff
+    DC -> app : create(appDef.app)
+    create "Redis" as redis #ffaaff
+    app -> redis : create(appDef.service[0])
+    create "WebService" as web #ffaaff
+    app -> web: create(appDef.service[1])
+    create "NodeJS" as node #ffaaff
+    app -> node: create(appDef.service[2])
 end box
+box "Edge" #ffaa88
+    participant "Edge Egress" as EE
+    participant "Edge Ingress" as EI
+end box
+box "Vehicle" #ffffaa
+    participant "Vehicle Egress" as CE
+    create WorkerC as workerc #ffaaff
+    app -> workerc: create(appDef.service[4])
+    participant "Sensor Bus" as CI
+end box
+CI -> workerc : gather(data)
+workerc -> CE : transmit(data)
+CE -> EI : transmit(data)
+EI -> EE : transmit(data)
+EE -> DCI : transmit(data)
+DCI -> app : update(data)
+
 
 @enduml

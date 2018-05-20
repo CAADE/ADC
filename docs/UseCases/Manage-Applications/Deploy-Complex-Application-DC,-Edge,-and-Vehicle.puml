@@ -1,14 +1,4 @@
 @startuml
-Actor "actorName" as A
-
-box "Manage-Application" #lightblue
-participant "adc" as S
-A -> S : Deploy-Complex-Application-DC,-Edge,-and-Vehicle
-end box
-
-@enduml
-
-@startuml
 Actor "Application Developer" as dev
 
 box "Data Center" #aaffff

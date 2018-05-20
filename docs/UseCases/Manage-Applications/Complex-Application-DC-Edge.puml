@@ -1,0 +1,38 @@
+@startuml
+
+package "Hybrid Cloud C3" #ffffaa {
+  component Application #ffffff
+  component OverlayNetwork
+  Application *-> OverlayNetwork
+}
+package "In Vehicle" #aaffff {
+  component Egress as IVE
+}
+package "Edge" #aaffaa {
+  interface ingress as EVI
+  component Egress as EVE
+  component WorkerE #ffffff
+  EVI ->  WorkerE
+  WorkerE -> EVE : 3000
+}
+
+package "Data Center" #ffaa88{
+  interface Ingress as DCI
+  component WebService #ffffff
+  component Redis #ffffff
+  component NodeJS #ffffff
+  Application *..> WebService
+  Application *..> Redis
+  Application *..> NodeJS
+  Application *..> WorkerC
+  Application *..> WorkerE
+  DCI - WebService : 80
+
+  DCI -- Redis : 5000
+  DCI -- NodeJS : 1337
+}
+
+IVE --> EVI
+EVE --> DCI
+
+@enduml
