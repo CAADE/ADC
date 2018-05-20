@@ -1,6 +1,6 @@
 @startuml
 
-package "Service-Stack/Storage-Services/Primary-Data-Store" {
+package "Primary Data Store" {
 component component1
 component component2
 interface i1
