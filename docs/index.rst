@@ -5,4 +5,6 @@ Automotive Data Center
    :maxdepth: 2
 
    Actors/index
+   UseCases/index
+   Solution/index
 
