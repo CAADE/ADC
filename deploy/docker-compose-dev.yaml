@@ -14,6 +14,8 @@ services:
       image: wurstmeister/zookeeper
       ports:
         - "2181:2181"
+  ingestion-producer:
+    image: kafka-rest-proxy
   ingestion:
     image: madajaju/adc-ingestion
     ports:
