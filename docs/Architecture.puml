@@ -3,8 +3,8 @@
 skinparam packageStyle rect
 
 top to bottom direction
-package adc  #dddddd {
-    package "Cloud Connected Car" #aaffff {
+package <size:32>ADC</size>  #dddddd {
+    package "<size:24>Cloud Connected Car</size>" as CCC #aaffff {
       package "Ingestion Engine" {
       }
       package "Annotation Engine" {
@@ -17,7 +17,7 @@ package adc  #dddddd {
       }
     }
 
-    package "Application Development Framework" #aaffaa {
+    package "<size:24>Application</size>\n<size:24>Development</size>\n<size:24>Framework</size>" as ADF #aaffaa {
       package "Telematics" {}
       package "Dynamic Mapping" {}
       package "In Vehicle Infomatics" {}
@@ -25,7 +25,7 @@ package adc  #dddddd {
 
     }
 
-    package "Connection Services" #ffffaa {
+    package "<size:24>Connection Services</size>" as CS #ffffaa {
       package "Notification Gateway" {
       }
       package "API Gateways" {
@@ -42,13 +42,13 @@ package "External Systems" { }
 package "Data Centers" { }
 package "Automobile" { }
 
-"Cloud Connected Car" --> "Application Development Framework"
-"Application Development Framework" --> "Connection Services"
+CCC --> ADF
+ADF --> CS
 left to right direction
-"Connection Services" --> "Alert Systems"
-"Connection Services" --> "External Systems"
-"Connection Services" --> "Data Centers"
-"Automobile" --> "Cloud Connected Car"
+CS --> "Alert Systems"
+CS --> "External Systems"
+CS --> "Data Centers"
+"Automobile" --> CCC
 
 @enduml
 

@@ -5,20 +5,20 @@ skinparam packageStyle rect
 
 top to bottom direction
 
-package adc  #dddddd {
+package <size:32>ADC</size>  #dddddd {
 
-  package "Software Stack" #ffffaa {
+  package "<size:24>Software Stack</size>" as SS #ffffaa {
     package "Cloud Connected\nCar Services" { }
     package "Connection Services" { }
     package "Application\nDevelopment Framework" { }
   }
-  package "Data Center" as DC #ffffff {
-      package "Cloud Stack" #aaffaa {
+  package "<size:24>Data Center</size>" as DC #ffffff {
+      package "Cloud Stack" as CS #aaffaa {
         package "Application Orchestration" { }
         package "Local Service/App Registry" as LSAR { }
         package "Cloud Control" { }
       }
-      package "Hardware Stack" #aaffff {
+      package "Hardware Stack" as HS #aaffff {
         package "Compute" { }
         package "Storage" { }
         package "Network" { }
@@ -31,13 +31,13 @@ package adc  #dddddd {
   }
   package "Data Center Geo 1" as DCG1 { }
   package "Data Center Geo 2" as DCG2 { }
-  FC --> "Cloud Stack"
+  FC --> CS
   FC -> DCG1
   FC --> DCG2
-  "Software Stack" --> FC
+  SS --> FC
 }
 
-"Cloud Stack" --> "Hardware Stack"
+CS --> HS
 
 @enduml
 

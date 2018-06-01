@@ -1,6 +1,6 @@
 @startuml
 
-package  adc #dddddd {
+rectangle <size:32>ADC</size> #dddddd {
   storage "Automobile 1" as Car1 #ffffaa
   storage "Automobile 2" as Car2 #ffffaa
   cloud "Private\nGeo 1" as Cloud1 #aaffff {

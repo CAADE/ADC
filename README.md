@@ -4,10 +4,9 @@ developers, system operstators, stack developers that connect vehicles, edge,
 and data centers across the automotive industry ecosystem.
 
 This repository contains the design and a simple interactive reference architecture of the design.
-Which can be found on the [read the docs](http://adc.readthedocs.io)
+Which can be found on the [Read the Docs](http://adc.readthedocs.io) document hub.
 
-An implementation of the reference architecture is written using [sailsjs](http://sailsjs.org/) a nodejs MVC framework.
-
+![image](docs/Architecture.png)
 
 ## Design
 
@@ -21,3 +20,8 @@ To generate the graphic files (*.png) for the plantuml files (*.puml) do the fol
 ```
 # npm run-script design
 ```
+
+## Implementations
+
+An implementation of the reference architecture is written using [sailsjs](http://sailsjs.org/) a nodejs MVC framework.
+
