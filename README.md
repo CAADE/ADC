@@ -21,9 +21,3 @@ To generate the graphic files (*.png) for the plantuml files (*.puml) do the fol
 ```
 # npm run-script design
 ```
-
-A PDF and html version of the wiki can be generated using wiki2pdf. There is a npm target defined
-in the package.json that sets up the default generation of the pdf and html versions of the wiki.
-```
-# npm run-script build-doc
-```
