@@ -1,9 +1,9 @@
 .. _SubSystem-Security-Aspect:
 
-Security-Aspect
-============
+Security Aspect
+===============
 
-Security-Aspect is a subsystem of adc ...
+Security Aspect is a subsystem of adc ...
 
 Use Cases
 ---------
@@ -15,14 +15,14 @@ Use Cases
 Users
 -----
 
-* :ref:`Actor-User`
+* :ref:`Actor-Operations-Manager`
 
 .. image:: UserInteraction.png
 
 Uses
 ----
 
-* :ref:`Security-Aspect`
+* :ref:`SubSystem-Security-Aspect`
 
 Interface
 ---------

@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Policy" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-group-create()
+CLI -> S : group/create()
+A -> Web : group/create()
+Web -> S : group/create()
+end box
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Securitys" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-encryption-manage()
+CLI -> S : encryption/manage()
+A -> Web : encryption/manage()
+Web -> S : encryption/manage()
+end box
+
+@enduml

@@ -1,7 +1,7 @@
 .. _UseCase-Manage-Security:
 
-Use Case Manage-Security
-====================
+Manage Security
+===============
 
 _Description_
 

@@ -16,14 +16,14 @@ Use Cases
 Users
 -----
 
-* :ref:`Actor-User`
+* :ref:`Actor-Operations-Manager`
 
 .. image:: UserInteraction.png
 
 Uses
 ----
 
-* :ref:`SubSytem-AI-Framework`
+* :ref:`SubSystem-AI-Framework`
 
 Interface
 ---------

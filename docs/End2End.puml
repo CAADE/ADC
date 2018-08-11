@@ -8,7 +8,7 @@ package "Hybrid Federation Cloud" as HFC #55ccff {
   package "Hybrid Orchestrator" as HOH { }
   package "Data Coordinator" as DCH #ff8888 { }
   package "Registry" as RH #cccccc { }
-  package "Control" as CH #aaffff { }
+  package "Control" as CH #lightblue { }
   HOH --> DCH
   HOH --> CH
   HOH --> RH
@@ -28,7 +28,7 @@ note left of DCH #ff8888
     Cloud at the right time.
 end note
 
-note top of CH #aaffff
+note top of CH #lightblue
 Controller schedules services
 on the individual clouds
 end note
@@ -40,7 +40,7 @@ package "Data Center Cloud" as DCC #ffaa88 {
     package Storage as SDCC { }
     package Egress as ED #ff8888 { }
   }
-  package SDI as SDID #aaffff { }
+  package SDI as SDID #lightblue { }
   package Hardware as HDCC { }
 }
 
@@ -54,7 +54,7 @@ package Connectivity #ffff88 {
       package "Egress" as EC #ff8888 { }
     }
     package "Radio" as RC { }
-    package SDI as SDIC #aaffff { }
+    package SDI as SDIC #lightblue { }
     package Hardware as HwC { }
   note as Note1
     control, compute, storage, network
@@ -63,7 +63,7 @@ package Connectivity #ffff88 {
 }
 
 package InVehicle #88ff88 {
-  package SDI as SDII #aaffff { }
+  package SDI as SDII #lightblue { }
   package "Services" as SI #cccccc {
     package "Cluster/Safety" {
         package "Sensor Fusion" as SFI { }
@@ -79,7 +79,7 @@ package InVehicle #88ff88 {
   SDII --> HI
 }
 
-note bottom of InVehicle  #aaffaa
+note bottom of InVehicle  #lightgreen
 Hypothosis: Every Car is a Vehicle Cloud
 Where are we today. Not in the Vehicle Cloud
 Where we might need to be first: Multiple Vehicle clouds in the Car. Ex. IVI different from Monitoring

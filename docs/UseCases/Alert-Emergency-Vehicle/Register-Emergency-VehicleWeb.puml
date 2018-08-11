@@ -1,0 +1,13 @@
+@startuml
+
+salt
+{
+  Register Emergency Vehicle
+  {
+      parameter1 | "value1"
+      parameter2 | "value2"
+      [ Cancel <&circle-x>] | [ OK <&account-login> ]
+  }
+}
+
+@enduml

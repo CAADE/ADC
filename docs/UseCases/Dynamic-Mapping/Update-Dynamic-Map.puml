@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Dynamic-Map" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-dynamic-update()
+CLI -> S : dynamic/update()
+A -> Web : dynamic/update()
+Web -> S : dynamic/update()
+end box
+
+@enduml

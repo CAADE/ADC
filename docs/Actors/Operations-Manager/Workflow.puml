@@ -1,7 +1,7 @@
 @startuml
 |Operation Manager|
 start
-|#aaffaa|system.name|
+|#lightgreen|system.name|
 fork
 :Manage Infrastructure;
 fork again

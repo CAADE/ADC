@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Data-Exchanges" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-local-create()
+CLI -> S : local/create()
+A -> Web : local/create()
+Web -> S : local/create()
+end box
+
+@enduml

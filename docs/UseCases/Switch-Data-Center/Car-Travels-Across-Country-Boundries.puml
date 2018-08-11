@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Switch-Data-Centers" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-travels-car()
+CLI -> S : travels/car()
+A -> Web : travels/car()
+Web -> S : travels/car()
+end box
+
+@enduml

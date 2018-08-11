@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Data-Coordinations" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-data-establish()
+CLI -> S : data/establish()
+A -> Web : data/establish()
+Web -> S : data/establish()
+end box
+
+@enduml

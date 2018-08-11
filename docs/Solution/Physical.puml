@@ -13,18 +13,18 @@ package <size:32>ADC</size>  #dddddd {
     package "Application\nDevelopment Framework" { }
   }
   package "<size:24>Data Center</size>" as DC #ffffff {
-      package "Cloud Stack" as CS #aaffaa {
+      package "Cloud Stack" as CS #lightgreen {
         package "Application Orchestration" { }
         package "Local Service/App Registry" as LSAR { }
         package "Cloud Control" { }
       }
-      package "Hardware Stack" as HS #aaffff {
+      package "Hardware Stack" as HS #lightblue {
         package "Compute" { }
         package "Storage" { }
         package "Network" { }
       }
   }
-  package "Federatated Cloud" as FC #ffaaaa {
+  package "Federatated Cloud" as FC #pink {
       package "Global Service/App Registry" as GSAR { }
       package "Global Policy Engine" as GPE { }
       package "Data Exchange" as DE { }

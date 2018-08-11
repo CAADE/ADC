@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Data-Exchanges" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-analytics-run()
+CLI -> S : analytics/run()
+A -> Web : analytics/run()
+Web -> S : analytics/run()
+end box
+
+@enduml

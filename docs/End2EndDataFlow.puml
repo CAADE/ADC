@@ -21,7 +21,7 @@ package "Automotive Data Center End To End" #dddddd {
     }
     package Fog { }
   }
-  package InVehicle #aaffaa {
+  package InVehicle #lightgreen {
       package "Sensor Fusion" { }
       package "Storage " { }
       package "Analytics Engine" { }

@@ -4,12 +4,12 @@
 package "Hybrid Cloud C3" #ffffaa {
   component Application #ffaa88
 }
-package "In Vehicle" #aaffff {
+package "In Vehicle" #lightblue {
   component Egress as IVE
   component Worker3 #ffaa88
   Worker3 --> IVE
 }
-package "Edge" #aaffaa {
+package "Edge" #lightgreen {
   interface ingress as EVI
   component Worker2 #ffaa88
   component Egress as EVE

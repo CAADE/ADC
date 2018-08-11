@@ -1,7 +1,7 @@
 @startuml
 |Stack Developer|
 start
-|#aaffaa|ADC|
+|#lightgreen|ADC|
 fork
 :Manage Application Stacks;
 fork again

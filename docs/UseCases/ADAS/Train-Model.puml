@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "ADAS" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-model-train()
+CLI -> S : model/train()
+A -> Web : model/train()
+Web -> S : model/train()
+end box
+
+@enduml

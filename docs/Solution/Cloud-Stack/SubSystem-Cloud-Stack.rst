@@ -3,6 +3,9 @@
 Cloud Stack
 ===========
 
+.. _Cloudlet: http://cloudlet.readthedocs.io
+.. _C3: http://c3.readthedocs.io
+
 Cloud Stack is a subsystem of Automotive Data Center connects multiple data centers and public cloud
 together. This abstracts the hardware away from the application and service layer. The Cloud
 Stack utilizes the :ref:`SubSystem-Common-Cloud-Core` and the :ref:`SubSystem-Cloudlet` to give a federated hybrid cloud
@@ -21,11 +24,11 @@ Use Cases
 Users
 -----
 
-* :ref:`Actor-User`
+* :ref:`Actor-Operations-Manager`
 * :ref:`Actor-Operations-Manager`
 
-The Operations Manager uses the `Common Cloud Core <http://c3.readthedocs.io>`_C3/wiki) and the
-`Cloudlet <http://cloudlet.readthedocs.io>`_ architectures to build a base of
+The Operations Manager uses the C3_ and the
+Cloudlet_ architectures to build a base of
 the Cloud Stack.
 
 
@@ -34,7 +37,7 @@ the Cloud Stack.
 Uses
 ----
 
-* :ref:`Hardware-Stack`
+* :ref:`SubSystem-Hardware-Stack`
 
 Interface
 ---------
@@ -58,7 +61,7 @@ Activities and Flows
 --------------------
 
 When a Data Center is brought online it registers itself with the Federated CLoud architecture
-using the `Cloudlet <http://cloudlet.readthedocs.io>`_ architecture. When the
+using the Cloudlet_ architecture. When the
 Data Center registers to the Federation it also connects the Data Exchange Federation and
 Data Coordination so Information can flow between the data Centers based on policies that
 have been established at each Data Center.
@@ -70,7 +73,7 @@ Deployment Architecture
 
 The Automotive Data Center spans multiple data centers and needs to an architecture that
 connects the data centers so they can be managed together and applications can span multiple
-data centers. The `Cloudlet <http:/cloudlet.readthedocs.io>`_ architecture is used to aid in
+data centers. The Cloudlet_ architecture is used to aid in
 the connectivity across Data Centers.
 
 In this case each data center has some common elements which include a Data Lake, a Hybrid Cloud
@@ -82,8 +85,7 @@ Physical Architecture
 ---------------------
 
 In this example Data Center Build out there are 3 data centers that are connected
-using the Cloudlet Architecture. Details of the
-`Cloudlet architecture is here <http://cloudlet.readthedocs.io>`_
+using the Cloudlet Architecture. Details of the Cloudlet_
 A common network interface between the 3 Data Centers.
 
 .. image:: Physical.png

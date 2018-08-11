@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Policy" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-policies-list()
+CLI -> S : policies/list()
+A -> Web : policies/list()
+Web -> S : policies/list()
+end box
+
+@enduml

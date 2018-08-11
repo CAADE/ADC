@@ -5,7 +5,7 @@ partition "Operations Manager"  #cccccc {
   (*) --> "Registered Admin"
 }
 
-partition "ADC" #aaffaa {
+partition "ADC" #lightgreen {
   "Registered Admin" --> "Manage Infrastructure"
   "Registered Admin" --> "Manage Applications"
   "Registered Admin" --> "Manage External Connections"

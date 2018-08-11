@@ -9,7 +9,7 @@ A simple application has multiple services that run in the data center based off
 
 An application definition has information about the application and possible location of where to place the services
 that make up the application. Ultimately the decision on where to place the services of the application is the
-responsibility of the :ref:`SubSystem-Common-Cloud-Core`_.
+responsibility of the :ref:`SubSystem-Common-Cloud-Core`.
 
 .. image:: Deploy-Simple-Application-in-DC.png
 

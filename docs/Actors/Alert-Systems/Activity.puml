@@ -4,11 +4,11 @@ partition "Alert Systems"  #cccccc {
   (*) ---> "Register with ADC"
 }
 
-partition "Automotive Data Center" #aaffaa {
+partition "Automotive Data Center" #lightgreen {
   "Register with ADC" --> "Register"
 }
 
-partition "Vehicle" #ffaaaa {
+partition "Vehicle" #pink {
    "Drive" --> "Accident"
 }
 

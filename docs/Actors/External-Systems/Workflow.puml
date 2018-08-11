@@ -15,22 +15,22 @@ if(connection.type) then (notification)
   stop
   |ADC|
 elseif (connection.type) then (data exchange)
-  #aaffff:register data exchange;
-  |#aaffff|Data Exchange External System|
+  #lightblue:register data exchange;
+  |#lightblue|Data Exchange External System|
   :submit analytics job;
   |ADC|
-  #aaffff:run analytics job in Data Centers;
-  #aaffff:return results;
+  #lightblue:run analytics job in Data Centers;
+  #lightblue:return results;
   |Data Exchange External System|
   :compile results;
   stop
   |ADC|
 elseif (connection.type) then (api gateway)
-  #aaffaa:register api gateway;
-  |#aaffaa|API External System|
+  #lightgreen:register api gateway;
+  |#lightgreen|API External System|
   :access ADC API;
   |ADC|
-  #aaffaa:return queried Data;
+  #lightgreen:return queried Data;
   |API External System|
   stop
 endif

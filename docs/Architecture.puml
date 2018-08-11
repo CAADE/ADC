@@ -4,7 +4,7 @@ skinparam packageStyle rect
 
 top to bottom direction
 package <size:32>ADC</size>  #dddddd {
-    package "<size:24>Cloud Connected Car</size>" as CCC #aaffff {
+    package "<size:24>Cloud Connected Car</size>" as CCC #lightblue {
       package "Ingestion Engine" {
       }
       package "Annotation Engine" {
@@ -17,7 +17,7 @@ package <size:32>ADC</size>  #dddddd {
       }
     }
 
-    package "<size:24>Application</size>\n<size:24>Development</size>\n<size:24>Framework</size>" as ADF #aaffaa {
+    package "<size:24>Application</size>\n<size:24>Development</size>\n<size:24>Framework</size>" as ADF #lightgreen {
       package "Telematics" {}
       package "Dynamic Mapping" {}
       package "In Vehicle Infomatics" {}

@@ -5,7 +5,7 @@ partition "ApplicationDeveloper"  #cccccc {
   (*) --> "Start Here"
 }
 
-partition "system.name" #ffaaaa {
+partition "system.name" #pink {
   "Start Here" --> "Here"
 }
 

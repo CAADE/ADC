@@ -5,7 +5,7 @@ partition "External Systems" #cccccc {
   (*) ---> "Register to Data Center"
 }
 
-partition "ADC" #ffaaaa {
+partition "ADC" #pink {
   "Register to Data Center" --> "Register External System"
 }
 

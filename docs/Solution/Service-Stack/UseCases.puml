@@ -4,13 +4,13 @@ left to right direction
 
 skinparam usecase {
   BackgroundColor #ffffaa
-  BackgroundColor<<Main>> #aaffff
+  BackgroundColor<<Main>> #lightblue
 }
 actor :Vehicle: as Car
 actor :External Systems: as ES
 
 
-rectangle "Service Stack" #aaffaa {
+rectangle "Service Stack" #lightgreen {
     UseCase UC1 as "Transmit Telemetry"
     UseCase UC2 as "Transform Data"
     UseCase UC3 as "Stream Data"

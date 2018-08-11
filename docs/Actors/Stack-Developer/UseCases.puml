@@ -4,7 +4,7 @@ left to right direction
 
 :Stack Developer: as Car
 
-rectangle "Automotive Data Center" #aaffaa {
+rectangle "Automotive Data Center" #lightgreen {
     (Manage Application Stacks) as U1
     (Manage Services) as U2
 }

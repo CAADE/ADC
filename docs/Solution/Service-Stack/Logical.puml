@@ -6,24 +6,24 @@ skinparam interface {
 }
 top to bottom direction
 package "Service Stack"  #dddddd {
-  package "Cloud Clonnected Car" #aaffff {
+  package "Cloud Clonnected Car" #lightblue {
         package "Ingestion Engine" { }
-        package "Annotation Engine" #aaffaa { }
-        package "Streaming Engine" #aaffaa { }
-        package "AI Framework" #aaffaa { }
-        package "Analytics" #aaffaa { }
+        package "Annotation Engine" #lightgreen { }
+        package "Streaming Engine" #lightgreen { }
+        package "AI Framework" #lightgreen { }
+        package "Analytics" #lightgreen { }
   }
-  package "Storage Services" #aaffff {
+  package "Storage Services" #lightblue {
         package "Raw Storage" { }
         package "Secondary Storage" { }
   }
-  package "Connection Services" #aaffff {
-      package "Notification Gateway" #aaffaa { }
-      package "Application Store" #aaffaa { }
-      package "API Gateways" #aaffaa { }
-      package "Feedback Gateway" #aaffaa { }
+  package "Connection Services" #lightblue {
+      package "Notification Gateway" #lightgreen { }
+      package "Application Store" #lightgreen { }
+      package "API Gateways" #lightgreen { }
+      package "Feedback Gateway" #lightgreen { }
   }
-  package "Application Development Framework" #aaffff {
+  package "Application Development Framework" #lightblue {
   }
 }
 

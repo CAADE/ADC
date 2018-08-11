@@ -4,7 +4,7 @@ skinparam packageStyle rect
 skinparam interface {
   backgroundColor black
 }
-package "Application Development Framework" #aaffaa {
+package "Application Development Framework" #lightgreen {
   package "Telematics" {}
   package "Dynamic Mapping" {}
   package "In Vehicle Infomatics" {}
@@ -14,23 +14,23 @@ package "Application Development Framework" #aaffaa {
 
 top to bottom direction
 package adc  #dddddd {
-    package "Cloud Connected Car" #aaffff {
+    package "Cloud Connected Car" #lightblue {
       package "Ingestion Engine" { }
-      package "Annotation Engine" #aaffaa { }
-      package "Streaming Engine" #aaffaa { }
-      package "AI Framework" #aaffaa { }
+      package "Annotation Engine" #lightgreen { }
+      package "Streaming Engine" #lightgreen { }
+      package "AI Framework" #lightgreen { }
       package "Raw Storage" { }
       package "Secondary Storage" { }
-      package "Analytics" #aaffaa { }
+      package "Analytics" #lightgreen { }
     }
 
 
     package "Connection Services" #ffffaa {
-      package "Notification Gateway" #aaffaa { }
-      package "Application Store" #aaffaa { }
-      package "API Gateways" #aaffaa { }
+      package "Notification Gateway" #lightgreen { }
+      package "Application Store" #lightgreen { }
+      package "API Gateways" #lightgreen { }
       package "Data Coordinator" { }
-      package "Feedback Gateway" #aaffaa { }
+      package "Feedback Gateway" #lightgreen { }
       package "Data Exchange" { }
     }
 }

@@ -4,7 +4,7 @@
 package "Hybrid Cloud C3" #ffffaa {
   component Application
 }
-package "In Vehicle" #aaffff {
+package "In Vehicle" #lightblue {
   component Egress as IVE
   component "Sensor Bus" as SB
   component OverlayNetwork
@@ -26,7 +26,7 @@ package "In Vehicle" #aaffff {
   OverlayNetwork --> IVE
 
 }
-package "Edge" #aaffaa {
+package "Edge" #lightgreen {
   interface ingress as EVI
   component Egress as EVE
   EVI --> EVE

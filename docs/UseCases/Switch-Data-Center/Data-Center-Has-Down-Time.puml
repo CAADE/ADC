@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Switch-Data-Centers" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-center-data()
+CLI -> S : center/data()
+A -> Web : center/data()
+Web -> S : center/data()
+end box
+
+@enduml

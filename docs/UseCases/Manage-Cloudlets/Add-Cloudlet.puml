@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Cloudlet" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-cloudlet-add()
+CLI -> S : cloudlet/add()
+A -> Web : cloudlet/add()
+Web -> S : cloudlet/add()
+end box
+
+@enduml

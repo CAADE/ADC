@@ -4,7 +4,7 @@ start
 |#ffffaa|Automotive Data Center|
 :Register Alert System;
 stop
-|#ffaaaa|Vehicle|
+|#pink|Vehicle|
 start
 :Drive;
 :Crash;

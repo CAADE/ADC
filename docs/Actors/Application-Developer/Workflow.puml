@@ -11,7 +11,7 @@ fork again
 :Modify Service Stack;
 :Version Service Stack;
 fork end
-|#aaffff|Application Manager|
+|#lightblue|Application Manager|
 :Test Application Stack;
 :Create an Application;
 :Launch an Application in an environment;

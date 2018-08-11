@@ -1,0 +1,13 @@
+@startuml
+
+salt
+{
+  Data Center Has Down Time
+  {
+      parameter1 | "value1"
+      parameter2 | "value2"
+      [ Cancel <&circle-x>] | [ OK <&account-login> ]
+  }
+}
+
+@enduml

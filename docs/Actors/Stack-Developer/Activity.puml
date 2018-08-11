@@ -5,7 +5,7 @@ partition "Stack-Developer"  #cccccc {
   (*) --> "Registered Developer"
 }
 
-partition "system.name" #aaffaa {
+partition "system.name" #lightgreen {
   "Registered Developer" --> "Manage Services"
   "Registered Developer" --> "Manage Application Stacks"
 }

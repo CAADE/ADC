@@ -7,10 +7,10 @@ fork
 |#ffaa88|Data Center|
 :deploy application;
 fork again
-|#aaffaa|Edge Cloud|
+|#lightgreen|Edge Cloud|
 :deploy application;
 fork again
-|#aaffff|In Vehicle Cloud|
+|#lightblue|In Vehicle Cloud|
 :deploy application;
 end fork
 |adc|

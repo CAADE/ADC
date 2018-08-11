@@ -1,7 +1,7 @@
 .. _UseCase-Manage-External-Connections:
 
-Use Case Manage-External-Connections
-====================
+Manage External Connections
+===========================
 
 _Description_
 

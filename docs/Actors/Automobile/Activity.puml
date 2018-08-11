@@ -6,7 +6,7 @@ partition "Automobile"  #cccccc {
   "Drive Car" --> "Cross Geo Borders"
 }
 
-partition "Automotive Data Center" #aaffaa {
+partition "Automotive Data Center" #lightgreen {
   (*) --> "Register Car"
   "Drive Car" --> "Transmit Telemetry"
   "Cross Geo Borders" --> "Switch Data Center"

@@ -20,11 +20,7 @@ Activities
 Detail Scenarios
 ----------------
 
-.. toctree::
-   :glob:
-   :maxdepth: 1
-
-   Scenario*
+See :ref:`SubSystem-Common-Cloud-Core` for detailed Scenarios.
 
 Systems Involved
 ----------------

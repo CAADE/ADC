@@ -1,7 +1,7 @@
 @startuml
 Actor "Application Developer" as dev
 
-box "Data Center" #aaffff
+box "Data Center" #lightblue
     participant "adc" as S
     participant "data center" as DC
     participant "DC Ingress" as DCI

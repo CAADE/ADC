@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Alert-Emergency-Vehicle" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-emergency-register()
+CLI -> S : emergency/register()
+A -> Web : emergency/register()
+Web -> S : emergency/register()
+end box
+
+@enduml

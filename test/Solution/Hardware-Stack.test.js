@@ -1,4 +1,4 @@
-describe('Subsystem Hardware-Stack', function () {
+describe('Subsystem SubSystem-Hardware-Stack', function () {
   describe('REST Test Cases', function () {
     it('Test REST 1', function (done) {
        done();

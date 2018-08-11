@@ -12,12 +12,11 @@ Use Cases
 ---------
 
 * :ref:`UseCase-Manage-Infrastructure`
-* :ref:`UseCase-Manage Infrastructure`
-* :ref:`UseCase-Manage Applications`
-* :ref:`UseCase-Manage External Connections`
-* :ref:`UseCase-Manage Policies`
-* :ref:`UseCase-Manage Data Coordination`
-* :ref:`UseCase-Manage Services`
+* :ref:`UseCase-Manage-Applications`
+* :ref:`UseCase-Manage-External-Connections`
+* :ref:`UseCase-Manage-Policies`
+* :ref:`UseCase-Manage-Data-Coordination`
+* :ref:`UseCase-Manage-Services`
 
 .. image:: UseCases.png
 

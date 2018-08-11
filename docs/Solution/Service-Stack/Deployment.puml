@@ -3,7 +3,7 @@
 package  adc #dddddd {
   storage "Automobile 1" as Car1 #ffffaa
   storage "Automobile 2" as Car2 #ffffaa
-  cloud "Private\nGeo 1" as Cloud1 #aaffff {
+  cloud "Private\nGeo 1" as Cloud1 #lightblue {
     node "Connection Services" as CS #ffffff
     node "Cloud Connected Car" as C3 #ffffff
     C3 - CS
@@ -13,17 +13,17 @@ package  adc #dddddd {
     C3 - Secondary
     Secondary -- CS
   }
-  cloud "Private\nGeo 2" as Cloud2 #aaffff {
+  cloud "Private\nGeo 2" as Cloud2 #lightblue {
   }
-  cloud "Private\nGeo 3" as Cloud3 #aaffff {
+  cloud "Private\nGeo 3" as Cloud3 #lightblue {
   }
-  cloud "Public\nGeo 1" as PG1 #aaffaa {
+  cloud "Public\nGeo 1" as PG1 #lightgreen {
     node "API Gateway" as AG #ffffff
   }
   CS --> AG
   node "Federated Cloud" as FC #ffffff
-  artifact "Alert System\nGeo 1" as AS1 #ffaaaa
-  artifact "3rd Party Apps" as PA3 #ffaaaa
+  artifact "Alert System\nGeo 1" as AS1 #pink
+  artifact "3rd Party Apps" as PA3 #pink
 
   Car1 --- C3
   AG -- PA3

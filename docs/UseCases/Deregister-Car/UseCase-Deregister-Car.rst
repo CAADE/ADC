@@ -18,14 +18,6 @@ Activities
 
 * _Activities_
 
-Detail Scenarios
-----------------
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-
-   Scenario*
 
 Systems Involved
 ----------------

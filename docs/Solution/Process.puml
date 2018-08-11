@@ -3,7 +3,7 @@
 |Automobile|
 start
 :Collect Data;
-|#aaffaa|Cloud Connected Car|
+|#lightgreen|Cloud Connected Car|
 :Ingestion Engine;
 split
     |Cloud Connected Car|

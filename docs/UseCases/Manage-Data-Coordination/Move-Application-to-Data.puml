@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Data-Coordinations" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "adc" as S
+A -> CLI : adc-application-move()
+CLI -> S : application/move()
+A -> Web : application/move()
+Web -> S : application/move()
+end box
+
+@enduml
