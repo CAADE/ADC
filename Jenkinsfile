@@ -3,9 +3,7 @@ pipeline {
     label 'node'
   }
   environment {
-    CAADE_REGISTRY = TBD
-    DOCKER_USER = TBD
-    DOCKER_PASS = TBD
+    CAADE_REGISTRY = "madajaju"
   }
   stages {
     stage('Build Docs') {
