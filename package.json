@@ -35,7 +35,7 @@
     "unit-tests": "node ./node_modules/mocha/bin/mocha test/lifecycle.test.js test/Unit/**test.js",
     "build": "npm update && node ./deploy/build build",
     "publish": "node ./deploy/build publish",
-    "build-doc": "node ./deploy/build-doc",
+    "build-doc": "npm run design && node ./deploy/build-doc",
     "debug": "node debug app.js",
     "deploy-apps": "node ./deploy/build deploy",
     "deploy": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-dev.yaml c3Dev",
