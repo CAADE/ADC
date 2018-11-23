@@ -1,4 +1,4 @@
-pipeline pipeline {
+pipeline {
   agent {
     label 'node'
   }
