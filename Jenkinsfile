@@ -5,18 +5,16 @@ pipeline pipeline {
   environment {
     CAADE_REGISTRY = "madajaju"
   }
-  stages {
-        stage('Build Docs') {
-          steps {
-            sh 'npm run build-doc'
-          }
-        }
-        stage('Build Services') {
-          steps {
-            sh 'npm run-script build'
-            sh 'npm run-script deploy-apps'
-          }
-        }
+    stage('Build Docs') {
+      steps {
+        sh 'npm run build-doc'
+      }
+    }
+    stage('Build Services') {
+      steps {
+        sh 'npm run-script build'
+        sh 'npm run-script deploy-apps'
+      }
     }
     stage('Test Unit') {
         agent {
@@ -53,5 +51,4 @@ pipeline pipeline {
         sh 'npm run-script deploy-prod'
       }
     }
-  }
 }
