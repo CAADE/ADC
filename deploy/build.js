@@ -2,9 +2,9 @@ const path = require('path');
 const fs = require('fs');
 const childProcess = require('child_process');
 const cmd = process.argv[2]; // node, build, cmd
-const root = process.cwd() + "/deploy/uservices";
+const root = process.cwd() + '/deploy/uservices';
 
-console.log("CMD:", cmd);
+console.log('CMD:', cmd);
 // it will be `npm run-script build` inside root in the end.
 console.log('===================================================================');
 console.log('Performing npm ' + cmd + ' inside root folder: ' + root );
@@ -14,7 +14,7 @@ npmBuildRecursive(root);
 
 function npmBuildRecursive(folder)
 {
-  console.log("NPM Build Recursive: " + folder);
+  console.log('NPM Build Recursive: ' + folder);
 
   for (let subfolder of subfolders(folder))
   {
@@ -23,7 +23,7 @@ function npmBuildRecursive(folder)
 
   const hasPackageJSON = fs.existsSync(path.join(folder, 'package.json'));
 
-  console.log("has package: " + hasPackageJSON);
+  console.log('has package: ' + hasPackageJSON);
   if (!hasPackageJSON && path.basename(folder) !== 'code')
   {
     return;
@@ -46,7 +46,7 @@ function npmBuildRecursive(folder)
 
 function npmBuild(where)
 {
-  childProcess.execSync("npm run-script " + cmd, { cwd: where, env: process.env, stdio: 'inherit' });
+  childProcess.execSync('npm run-script ' + cmd, { cwd: where, env: process.env, stdio: 'inherit' });
 }
 
 function subfolders(folder)
