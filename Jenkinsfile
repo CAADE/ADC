@@ -5,6 +5,7 @@ pipeline {
   environment {
     CAADE_REGISTRY = "madajaju"
   }
+  stages {
     stage('Build Docs') {
       steps {
         sh 'npm run build-doc'
@@ -51,4 +52,5 @@ pipeline {
         sh 'npm run-script deploy-prod'
       }
     }
+  }
 }
