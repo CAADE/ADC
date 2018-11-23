@@ -9,11 +9,17 @@ pipeline pipeline {
     stage ('Build') {
         parallel {
             stage('Build Docs') {
+              agent {
+                label 'docker-master'
+              }
               steps {
                 sh 'npm run build-doc'
               }
             }
             stage('Build Services') {
+              agent {
+                label 'docker-master'
+              }
               steps {
                 sh 'npm run-script build'
                 sh 'npm run-script deploy-apps'
