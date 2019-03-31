@@ -1,9 +1,9 @@
 const {send} = require('micro');
 const {URL, URLSearchParams} = require('url');
-const fetchJson = require('node-fetch-json');
-let config = require('./config');
-const Car = require('./Car');
-const DataCenter = require('./DataCenter');
+// const fetchJson = require('node-fetch-json');
+// let config = require('./config');
+// const Car = require('./Car');
+// const DataCenter = require('./DataCenter');
 
 
 // Registr back with the fleet. Fleet URL should be via configuration file.
@@ -30,8 +30,8 @@ const DataCenter = require('./DataCenter');
 // Send data to the DataCenter
 const kafka = require('kafka-node');
 const Producer = kafka.Producer;
-const HLProducer = kafka.HighLevelProducer;
-const KeyedMessage = kafka.KeyedMessage;
+// const HLProducer = kafka.HighLevelProducer;
+// const KeyedMessage = kafka.KeyedMessage;
 const Client = kafka.Client;
 
 // let client = new Client('10.0.75.1:2181');
@@ -46,7 +46,7 @@ producer.on('ready', function () {
   });
 });
 
-
+/*
 async function simulateCar(car, dc) {
   car.generateData();
   // Set timeout to run generate and send in <fequency> seconds
@@ -57,17 +57,18 @@ async function simulateCar(car, dc) {
     simulateCar(car);
   }, config.car.frequency * 1000);
 };
+*/
 
 // Create a car
-let car = new Car();
-let dc = new DataCenter();
+// let car = new Car();
+// let dc = new DataCenter();
 // simulateCar(car,dc);
 
 module.exports = async function (req, res) {
   const url = "http://" + req.headers.host + req.url;
   const myURL = new URL(url);
   const newSearchParams = new URLSearchParams(myURL.searchParams);
-  const id = newSearchParams.get("id");
+  // const id = newSearchParams.get("id");
   const callback = newSearchParams.get("callback");
 
   if (callback) {

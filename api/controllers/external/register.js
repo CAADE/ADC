@@ -1,16 +1,7 @@
 module.exports = {
-
   friendlyName: 'external register',
-
   description: ' Add description ',
-
   inputs: {
-    /* <parameter name>: {
-      description: 'The ID of the user to look up.',
-      type: '<parameter type>',
-      required: true
-    },
-    */
     url: {
       description: 'URL of the external system',
       type: 'string',
@@ -47,7 +38,7 @@ module.exports = {
     }
   },
 
-  fn: async function (inputs, exits, env) {
+  fn: async function (inputs, exits) {
 
     // Look up the user whose ID was specified in the request.
     // Note that we don't have to validate that `userId` is a number;

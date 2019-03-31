@@ -6,17 +6,11 @@ module.exports = {
   description: ' Add description ',
 
   inputs: {
-    /* <parameter name>: {
-      description: 'The ID of the user to look up.',
-      type: '<parameter type>',
-      required: true
-    },
-    */
     url: {
       description: 'Description of Attribute',
       type: 'string',
       required: true
-},
+    },
 
     mode: {
       description: "results format: json or html",
@@ -39,7 +33,7 @@ module.exports = {
     }
   },
 
-  fn: async function (inputs, exits, env) {
+  fn: async function (inputs, exits ) {
 
     // Look up the user whose ID was specified in the request.
     // Note that we don't have to validate that `userId` is a number;

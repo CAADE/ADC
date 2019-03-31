@@ -1,9 +1,9 @@
-var Promise = require('bluebird');
+
 
 describe('Use Case Alert-Emergency-Vehicle', () => {
   describe('Notify-Emergency-Vehicle Scenario', () => {
     it('Notify-Emergency-Vehicle Primary Test', (done) => {
-       done();
+      done();
     });
   });
 });
