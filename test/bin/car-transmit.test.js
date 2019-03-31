@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const taction = require('../../controllers/car/transmit');
+const taction = require('../../api/controllers/car/transmit');
 
 describe('car transmit Script Test Cases', function () {
   describe('Primary car transmit Test Case', function () {

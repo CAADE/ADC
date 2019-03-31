@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const taction = require('../../controllers/car/deregister');
+const taction = require('../../api/controllers/car/deregister');
 
 describe('car deregister Script Test Cases', function () {
   describe('Primary car deregister Test Case', function () {

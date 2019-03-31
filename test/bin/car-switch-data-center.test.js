@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const taction = require('../../controllers/car/switch-data-center');
+const taction = require('../../api/controllers/car/switch-data-center');
 
 describe('car switch-data-center Script Test Cases', function () {
   describe('Primary car switch-data-center Test Case', function () {

@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const taction = require('../../controllers/alertsystem/register');
+const taction = require('../../api/controllers/alertsystem/register');
 
 describe('alertsystem register Script Test Cases', function () {
   describe('Primary alertsystem register Test Case', function () {

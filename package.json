@@ -32,7 +32,7 @@
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'",
     "design": "java -jar docs/plantuml.jar docs/*.puml docs/**/*.puml",
     "custom-tests": "JUNIT_REPORT_PATH=./report.xml node ./node_modules/mocha/bin/mocha --reporter mocha-jenkins-reporter test/bootstrap.test.js test/**/*.test.js",
-    "unit-tests": "node ./node_modules/mocha/bin/mocha test/lifecycle.test.js test/Unit/**test.js",
+    "unit-tests": "node ./node_modules/mocha/bin/mocha test/lifecycle.test.js test/**/*.test.js",
     "build": "npm update && node ./deploy/build build",
     "publish": "node ./deploy/build publish",
     "build-doc": "npm run design && node ./deploy/build-doc",

@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const taction = require('../../controllers/external/register');
+const taction = require('../../api/controllers/external/register');
 
 describe('external register Script Test Cases', function () {
   describe('Primary external register Test Case', function () {
