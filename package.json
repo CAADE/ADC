@@ -38,10 +38,10 @@
     "build-doc": "npm run design && node ./deploy/build-doc",
     "debug": "node debug app.js",
     "deploy-apps": "node ./deploy/build deploy",
-    "deploy": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-dev.yaml c3Dev",
-    "deploy-test": "cd deploy && docker stack deploy --compose-file=./test/docker-compose.yaml c3Test",
-    "teardown-test": "docker stack rm c3Test",
-    "deploy-prod": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-prod.yaml c3"
+    "deploy": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-dev.yaml ADCDev",
+    "deploy-test": "env && cd deploy && docker stack deploy --compose-file=./test/docker-compose.yaml ADCTest",
+    "teardown-test": "docker stack rm ADCTest",
+    "deploy-prod": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-prod.yaml adc"
   },
   "main": "app.js",
   "repository": {
